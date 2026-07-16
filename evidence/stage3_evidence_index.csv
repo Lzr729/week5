@@ -1,0 +1,14 @@
+﻿evidence_id,stage,section_id,linked_record_ids,pdf_start_page,pdf_end_page,printed_start_page,printed_end_page,evidence_type,original_text_or_description,source_type,verification_status,notes
+E3-001,3,C2-2,CE-001,55,56,54,55,设立正文,共同申请设立公司前身上海云汉电子有限公司；办理完毕工商登记手续,pdf_text,confirmed,
+E3-002,3,C2-3,FG-001|FG-002|FG-003|FG-004|FG-005|FG-006,56,56,55,55,跨页流程图第一页,2008年5月至2015年3月的六个股本演变节点,pdf_visual_screenshot+manual_confirmation,confirmed,第一页页码已由用户确认。
+E3-003,3,C2-3,FG-007|FG-008|FG-009|FG-010|FG-011|FG-012,57,57,56,56,跨页流程图第二页,2015年8月至2020年5月的六个股本演变节点,pdf_visual_screenshot,confirmed,
+E3-004,3,C2-3,FG-013,58,58,57,57,跨页流程图第三页,2020年9月第三次增资和第四次股权转让节点,pdf_visual_screenshot,confirmed,该页下方开始C3。
+E3-005,3,C2-1,CE-008,53,55,52,54,整体变更正文,发行人系由上海云汉电子有限公司整体变更设立,pdf_text,confirmed,
+E3-006,3,C3-1,CE-009,58,59,57,58,事件标题及正文,2018年4月，股份公司第一次股权转让,pdf_text+flowchart_visual_review,confirmed,与FG-009去重。
+E3-007,3,C3-2,CE-010,59,61,58,60,事件标题及正文,2018年6月至7月，股份公司增加注册资本暨第二次股权转让,pdf_text+flowchart_visual_review,confirmed,与FG-010去重。
+E3-008,3,C3-3,CE-011,61,62,60,61,事件标题及正文,2019年8月，股份公司第三次股权转让,pdf_text+flowchart_visual_review,confirmed,与FG-011去重。
+E3-009,3,C3-4,CE-012,62,63,61,62,事件标题及正文,2020年5月，股份公司第二次增资,pdf_text+flowchart_visual_review,confirmed,与FG-012去重。
+E3-010,3,C3-5,CE-013,63,65,62,64,事件标题及正文,2020年9月，股份公司第三次增资和第四次股权转让,pdf_text+flowchart_visual_review,confirmed,与FG-013去重。
+E3-011,3,C3-6,CE-014|CE-014-A|CE-014-B|CE-014-C|CE-014-D|CE-014-DPLUS,65,70,64,69,对赌协议事件组,对赌协议解除相关情况；包含A、B、C、D、D+五个轮次,pdf_text+manual_visual_confirmation,confirmed,阶段三仅识别轮次，不分析条款。
+E3-012,3,C3-7/C3-8/C3-9,AF-001|AF-002|AF-003,70,72,69,71,辅助与重复披露,不存在股权代持；交易价格无明显异常；整体变更负未分配利润说明,pdf_text,confirmed,
+E3-013,3,C8-5,AF-004,94,94,93,93,否定性披露,发行人不存在最近一年新增股东的情况,pdf_original+manual_confirmation,confirmed,
