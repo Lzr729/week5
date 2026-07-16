@@ -1,0 +1,81 @@
+{
+  "package_name": "301563_stage3_acceptance_v1.0.0",
+  "project": "招股说明书工程化学习",
+  "company_code": "301563",
+  "company_name": "云汉芯城",
+  "stage": 3,
+  "stage_name": "候选事件识别",
+  "version": "1.0.0",
+  "status": "accepted",
+  "primary_fact_source": "301563_云汉芯城_IPO招股说明书.pdf",
+  "page_mapping": "PDF阅读器页码 = 正文印刷页码 + 1",
+  "record_counts": {
+    "main_candidate_events_and_groups": 14,
+    "round_candidates": 5,
+    "candidate_event_records_total": 19,
+    "flowchart_nodes": 13,
+    "auxiliary_findings": 5,
+    "evidence_records": 13,
+    "pending_manual_review": 0
+  },
+  "acceptance_scope": {
+    "included": [
+      "候选事件识别",
+      "C2-3跨页流程图识别",
+      "复合事件标记",
+      "重复披露去重",
+      "股东进入退出信号标记",
+      "对赌轮次候选项识别",
+      "双页码和原文证据索引"
+    ],
+    "excluded": [
+      "投资金额与每股价格计算",
+      "持股比例计算",
+      "完整股权结构重建",
+      "PE/VC最终识别",
+      "对赌条款法律效果判断"
+    ]
+  },
+  "files": [
+    {
+      "path": "README.md",
+      "sha256": "93a001b0f9d260c2908b77c25ef0e3ef079ae75cb8c35eccee9e6e814a32471b",
+      "size_bytes": 1590
+    },
+    {
+      "path": "data/auxiliary_findings.csv",
+      "sha256": "65ba1555d86b674eeef78f3392b16686d7c56f315aab2a69422403dc5353b365",
+      "size_bytes": 1135
+    },
+    {
+      "path": "data/candidate_events.csv",
+      "sha256": "e5fb4cf73fd28097601b24ebf0868ca222b1361f2cb832c8181050a497311b98",
+      "size_bytes": 7508
+    },
+    {
+      "path": "data/flowchart_nodes.csv",
+      "sha256": "a7c9666f60766edc59c0b5ddf35ac595a93ca1147e2fc9323c4586fe548823d3",
+      "size_bytes": 3345
+    },
+    {
+      "path": "docs/03_candidate_event_identification.md",
+      "sha256": "ff72dd75d6a9557710eeb38f536d2fa9853be2384270b11a233f8fdc44474e6f",
+      "size_bytes": 6928
+    },
+    {
+      "path": "evidence/stage3_evidence_index.csv",
+      "sha256": "e376d344548a57cf9b4de3670ce5c4734b411146deb1a4b365bee28293bcf1b7",
+      "size_bytes": 2556
+    },
+    {
+      "path": "metadata/stage_status.json",
+      "sha256": "0bde21785847d49c27bf8b41f370305b931fb4db64aae05f44cd2d1ae88f7b41",
+      "size_bytes": 1518
+    },
+    {
+      "path": "schemas/stage3_data_dictionary.md",
+      "sha256": "5a7a521f9df2270e478fa65badf30349c10d023e13c258da1ea11e77ad1dab47",
+      "size_bytes": 2559
+    }
+  ]
+}

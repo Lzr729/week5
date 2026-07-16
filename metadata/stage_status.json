@@ -1,0 +1,67 @@
+{
+  "project": "301563 云汉芯城招股说明书工程化学习",
+  "updated_through_stage": 3,
+  "stages": [
+    {
+      "stage": 1,
+      "name": "PDF基础检查",
+      "status": "accepted",
+      "report": "docs/01_pdf_basic_check.md",
+      "data": [
+        "data/pdf_metadata.json"
+      ]
+    },
+    {
+      "stage": 2,
+      "name": "章节定位",
+      "status": "accepted",
+      "report": "docs/02_section_location.md",
+      "data": [
+        "data/section_index.csv",
+        "evidence/evidence_index.csv"
+      ]
+    },
+    {
+      "stage": 3,
+      "name": "候选事件识别",
+      "status": "accepted",
+      "report": "docs/03_candidate_event_identification.md",
+      "data": [
+        "data/candidate_events.csv",
+        "data/flowchart_nodes.csv",
+        "data/auxiliary_findings.csv",
+        "evidence/stage3_evidence_index.csv"
+      ]
+    },
+    {
+      "stage": 4,
+      "name": "单事件人工理解与标注",
+      "status": "not_started"
+    },
+    {
+      "stage": 5,
+      "name": "股本变化时间线",
+      "status": "not_started"
+    },
+    {
+      "stage": 6,
+      "name": "增资、股权转让和股权结构快照",
+      "status": "not_started"
+    },
+    {
+      "stage": 7,
+      "name": "数值校验",
+      "status": "not_started"
+    },
+    {
+      "stage": 8,
+      "name": "PE/VC主体及投资路径识别",
+      "status": "not_started"
+    },
+    {
+      "stage": 9,
+      "name": "稳定人工步骤自动化",
+      "status": "not_started"
+    }
+  ]
+}
