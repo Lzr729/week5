@@ -1,0 +1,46 @@
+{
+  "project": "招股说明书工程化学习",
+  "company_code": "301563",
+  "company_name": "云汉芯城",
+  "document_name": "301563_云汉芯城_IPO招股说明书.pdf",
+  "primary_fact_source": true,
+  "pdf_readable": true,
+  "text_searchable": true,
+  "keywords_hit_body_text": true,
+  "pdf_page_count": 443,
+  "toc": {
+    "pdf_start_page": 6,
+    "pdf_end_page": 10,
+    "printed_start_page": 5,
+    "printed_end_page": 9,
+    "status": "confirmed"
+  },
+  "page_mapping": {
+    "rule": "pdf_page = printed_page + 1",
+    "offset": 1,
+    "scope": "confirmed for front matter and target sections",
+    "status": "confirmed"
+  },
+  "visual_review": {
+    "required": true,
+    "printed_page_range": "52-70",
+    "pdf_page_range": "53-71",
+    "observed_elements": [
+      "跨页图表",
+      "流程图",
+      "其他版面结构"
+    ],
+    "status": "confirmed"
+  },
+  "candidate_sections": [
+    "C2",
+    "C3",
+    "C7",
+    "C8"
+  ],
+  "ocr_required_for_whole_pdf": false,
+  "stage": 1,
+  "stage_status": "accepted",
+  "review_status": "confirmed",
+  "notes": "可检索文本不能替代跨页图形、箭头关系、脚注和跨页表格的人工视觉核对。"
+}
