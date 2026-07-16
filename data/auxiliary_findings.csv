@@ -1,0 +1,6 @@
+﻿finding_id,section_id,finding_type,pdf_start_page,pdf_end_page,printed_start_page,printed_end_page,evidence_excerpt,treatment,review_status,notes
+AF-001,C3-7,negative_disclosure,70,70,69,69,“不存在股权代持等情形”,辅助披露，不建立资本事件,confirmed,
+AF-002,C3-8,reasonableness_disclosure,70,70,69,69,“交易价格无明显异常”,辅助披露，不建立资本事件,confirmed,
+AF-003,C3-9,duplicate_or_supporting_disclosure,70,72,69,71,“有限公司整体变更为股份公司的基准日未分配利润为负的情况”,作为CE-008补充证据，不建立第二个整体变更事件,confirmed,
+AF-004,C8-5,negative_disclosure,94,94,93,93,“发行人不存在最近一年新增股东的情况。”,不建立最近一年新增股东候选事件,negative_disclosure_confirmed,仅适用于招股书所称最近一年，不否定更早期间股东进入。
+AF-005,C7/C8,static_shareholder_information,79,99,78,98,主要股东、发行前股本、特殊类型股东及股东穿透等静态信息,仅用于后续主体身份和静态股权核对，不凭静态表格新建交易事件,confirmed,

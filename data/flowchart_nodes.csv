@@ -1,0 +1,14 @@
+﻿flow_node_id,linked_event_id,sequence,event_date,node_label_original,detail_evidence_excerpt,pdf_page,printed_page,event_types,compound_event,duplicate_with_c3,review_status,notes
+FG-001,CE-001,1,2008-05,2008年5月，有限公司设立，注册资本50万元,由深圳云汉电子和刘云锋共同出资设立。,56,55,establishment,false,false,confirmed_by_visual_review,
+FG-002,CE-002,2,2009-12,2009年12月，有限公司第一次股权转让及增资，注册资本增至100万元,深圳云汉电子转让全部持股；曾烨、刘云锋随后增资。,56,55,equity_transfer|capital_increase,true,false,confirmed_by_visual_review,
+FG-003,CE-003,3,2014-06,2014年6月，有限公司第二次股权转让，注册资本100万元,刘云锋向曾烨、为赛咨询转让股权。,56,55,equity_transfer,false,false,confirmed_by_visual_review,
+FG-004,CE-004,4,2014-08,2014年8月，有限公司第二次增资，注册资本增至128.205万元,力源信息、东方富海及芜湖富海共同增资。,56,55,capital_increase,false,false,confirmed_by_visual_review,原文数值未计算。
+FG-005,CE-005,5,2015-01,2015年1月，有限公司第三次增资，注册资本增至136.9864万元,力源信息、东方富海及芜湖富海共同增资。,56,55,capital_increase,false,false,confirmed_by_visual_review,右框数值留待阶段七校验。
+FG-006,CE-006,6,2015-03,"2015年3月，有限公司第四次增资，注册资本增至2,000万元",各股东按持股比例以资本公积转增注册资本。,56,55,capital_increase|capital_reserve_conversion,false,false,confirmed_by_visual_review,
+FG-007,CE-007,7,2015-08,"2015年8月，有限公司第五次增资，注册资本增至2,158.2733万元",深创投、丰利财富、镇江红土、昆山红土、富海深湾、芜湖富海共同增资。,57,56,capital_increase,false,false,confirmed_by_visual_review,首轮清单漏项，现已补入。
+FG-008,CE-008,8,2015-12,"2015年12月，整体变更设立股份公司，股本总额4,000万股，注册资本4,000万元",经审计净资产折股，整体变更为股份公司。,57,56,overall_conversion,false,C3-9,confirmed_by_visual_review,
+FG-009,CE-009,9,2018-04,2018年4月，股份公司第一次股权转让,丰利财富将其持有的发行人全部股份转让给天健创投。,57,56,equity_transfer,false,C3-1,confirmed_by_visual_review,
+FG-010,CE-010,10,2018-06/07,2018年6月、7月，股份公司第一次增资和第二次股权转让,多名主体共同增资，并发生曾烨、刘云锋对外股份转让。,57,56,capital_increase|equity_transfer,true,C3-2,confirmed_by_visual_review,阶段四再拆分。
+FG-011,CE-011,11,2019-08,2019年8月，股份公司第三次股权转让,根据员工激励方案，为赛咨询向李文发、秦国君转让股份。,57,56,equity_transfer|employee_incentive_related,false,C3-3,confirmed_by_visual_review,
+FG-012,CE-012,12,2020-05,"2020年5月，股份公司第二次增资，股本总额增至4,748.0488万股",火炬电子增资。,57,56,capital_increase,false,C3-4,confirmed_by_visual_review,
+FG-013,CE-013,13,2020-09,2020年9月，股份公司第三次增资和第四次股权转让,厦门西堤、中小企业基金共同增资，并发生多笔股份转让。,58,57,capital_increase|equity_transfer,true,C3-5,confirmed_by_visual_review,阶段四再拆分。
