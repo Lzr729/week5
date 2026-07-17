@@ -1,0 +1,20 @@
+[
+  {
+    "range_id": "R-HISTORY",
+    "title": "发行人的设立情况及股份公司设立后的股东变化",
+    "start_pdf_page": 53,
+    "end_pdf_page": 71,
+    "start_printed_page": 52,
+    "end_printed_page": 70,
+    "locator_rule": "start=二、发行人的设立情况; end=四、发行人重大资产重组情况"
+  },
+  {
+    "range_id": "R-TERMINAL-SNAPSHOT",
+    "title": "本次发行前后的股本情况",
+    "start_pdf_page": 91,
+    "end_pdf_page": 94,
+    "start_printed_page": 90,
+    "end_printed_page": 93,
+    "locator_rule": "heading=八、发行人股本情况"
+  }
+]
