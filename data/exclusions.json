@@ -1,0 +1,184 @@
+[
+  {
+    "record_id": "EX-001",
+    "event_id": "CE-002",
+    "record_type": "父级复合事件容器",
+    "decision": "排除主时间线，使用已验收子事件",
+    "reason": "CE-002已拆分为子事件；父事件若同时进入会造成重复计数。",
+    "evidence_ids": [
+      "CE-002-E01",
+      "CE-002-E02"
+    ],
+    "pdf_pages": [
+      "56"
+    ],
+    "printed_pages": [
+      "55"
+    ],
+    "review_status": "已验收通过",
+    "review_note": "阶段四事实已验收；本阶段仅确认时间线纳入边界。"
+  },
+  {
+    "record_id": "EX-002",
+    "event_id": "CE-010",
+    "record_type": "父级复合事件容器",
+    "decision": "排除主时间线，使用已验收子事件",
+    "reason": "CE-010已拆分为子事件；父事件若同时进入会造成重复计数。",
+    "evidence_ids": [
+      "CE-010-E01",
+      "CE-010-E02",
+      "CE-010-E03",
+      "CE-010-E04",
+      "CE-010-E05",
+      "CE-010-E06"
+    ],
+    "pdf_pages": [
+      "59—61"
+    ],
+    "printed_pages": [
+      "58—60"
+    ],
+    "review_status": "已验收通过",
+    "review_note": "阶段四事实已验收；本阶段仅确认时间线纳入边界。"
+  },
+  {
+    "record_id": "EX-003",
+    "event_id": "CE-013",
+    "record_type": "父级复合事件容器",
+    "decision": "排除主时间线，使用已验收子事件",
+    "reason": "CE-013已拆分为子事件；父事件若同时进入会造成重复计数。",
+    "evidence_ids": [
+      "CE-013-E01",
+      "CE-013-E02",
+      "CE-013-E03",
+      "CE-013-E04",
+      "CE-013-E05"
+    ],
+    "pdf_pages": [
+      "63—65"
+    ],
+    "printed_pages": [
+      "62—64"
+    ],
+    "review_status": "已验收通过",
+    "review_note": "阶段四事实已验收；本阶段仅确认时间线纳入边界。"
+  },
+  {
+    "record_id": "EX-004",
+    "event_id": "CE-014",
+    "record_type": "特殊权利父级事件",
+    "decision": "排除股本变化主时间线",
+    "reason": "历次融资特殊权利履行、终止及无回购义务确认不改变发行人注册资本、股份数量或股东构成。",
+    "evidence_ids": [
+      "CE-014-E01",
+      "CE-014-E02",
+      "CE-014-E03",
+      "CE-014-E04"
+    ],
+    "pdf_pages": [
+      "65—70"
+    ],
+    "printed_pages": [
+      "64—69"
+    ],
+    "review_status": "已验收通过",
+    "review_note": "阶段四事实已验收；本阶段仅确认时间线纳入边界。"
+  },
+  {
+    "record_id": "EX-005",
+    "event_id": "CE-014-A",
+    "record_type": "特殊权利轮次级事项",
+    "decision": "排除股本变化主时间线",
+    "reason": "属于特殊权利履行、失效或终止，不构成发行人股本变化事件。",
+    "evidence_ids": [
+      "CE-014-A-E01",
+      "CE-014-A-E02"
+    ],
+    "pdf_pages": [
+      "65—66"
+    ],
+    "printed_pages": [
+      "64—65"
+    ],
+    "review_status": "已验收通过",
+    "review_note": "阶段四事实已验收；本阶段仅确认时间线纳入边界。"
+  },
+  {
+    "record_id": "EX-006",
+    "event_id": "CE-014-B",
+    "record_type": "特殊权利轮次级事项",
+    "decision": "排除股本变化主时间线",
+    "reason": "属于特殊权利履行、失效或终止，不构成发行人股本变化事件。",
+    "evidence_ids": [
+      "CE-014-B-E01",
+      "CE-014-B-E02",
+      "CE-014-B-E03",
+      "CE-014-B-E04",
+      "CE-014-B-E05"
+    ],
+    "pdf_pages": [
+      "66—68"
+    ],
+    "printed_pages": [
+      "65—67"
+    ],
+    "review_status": "已验收通过",
+    "review_note": "阶段四事实已验收；本阶段仅确认时间线纳入边界。"
+  },
+  {
+    "record_id": "EX-007",
+    "event_id": "CE-014-C",
+    "record_type": "特殊权利轮次级事项",
+    "decision": "排除股本变化主时间线",
+    "reason": "属于特殊权利履行、失效或终止，不构成发行人股本变化事件。",
+    "evidence_ids": [
+      "CE-014-C-E01",
+      "CE-014-C-E02",
+      "CE-014-C-E03"
+    ],
+    "pdf_pages": [
+      "68—69"
+    ],
+    "printed_pages": [
+      "67—68"
+    ],
+    "review_status": "已验收通过",
+    "review_note": "阶段四事实已验收；本阶段仅确认时间线纳入边界。"
+  },
+  {
+    "record_id": "EX-008",
+    "event_id": "CE-014-D",
+    "record_type": "特殊权利轮次级事项",
+    "decision": "排除股本变化主时间线",
+    "reason": "属于特殊权利履行、失效或终止，不构成发行人股本变化事件。",
+    "evidence_ids": [
+      "CE-014-D-E01"
+    ],
+    "pdf_pages": [
+      "69—70"
+    ],
+    "printed_pages": [
+      "68—69"
+    ],
+    "review_status": "已验收通过",
+    "review_note": "阶段四事实已验收；本阶段仅确认时间线纳入边界。"
+  },
+  {
+    "record_id": "EX-009",
+    "event_id": "CE-014-DPLUS",
+    "record_type": "特殊权利轮次级事项",
+    "decision": "排除股本变化主时间线",
+    "reason": "属于特殊权利履行、失效或终止，不构成发行人股本变化事件。",
+    "evidence_ids": [
+      "CE-014-DPLUS-E01"
+    ],
+    "pdf_pages": [
+      "70"
+    ],
+    "printed_pages": [
+      "69"
+    ],
+    "review_status": "已验收通过",
+    "review_note": "阶段四事实已验收；本阶段仅确认时间线纳入边界。"
+  }
+]

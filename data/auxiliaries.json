@@ -1,0 +1,44 @@
+[
+  {
+    "record_id": "AUX-001",
+    "event_id": "CE-001",
+    "record_type": "后续验资复核",
+    "decision": "不另建事件",
+    "reason": "2021年10月28日验资复核是对2008年设立出资的后续复核，不是新的股本变化。",
+    "evidence_ids": [
+      "CE-001-E03"
+    ],
+    "pdf_pages": [
+      "55"
+    ],
+    "printed_pages": [
+      "54"
+    ],
+    "review_status": "已验收通过",
+    "review_note": "保留为辅助证据，不进入主时间线。"
+  },
+  {
+    "record_id": "AUX-002",
+    "event_id": "CE-010｜CE-012｜CE-013",
+    "record_type": "后续验资报告",
+    "decision": "不另建事件",
+    "reason": "2020年12月16日验资报告分别验证既有增资，不应以报告出具日重建新事件或替代原交易完成节点。",
+    "evidence_ids": [
+      "CE-010-E06",
+      "CE-012-E03",
+      "CE-013-E02"
+    ],
+    "pdf_pages": [
+      "60",
+      "62",
+      "63—64"
+    ],
+    "printed_pages": [
+      "59",
+      "61",
+      "62—63"
+    ],
+    "review_status": "已验收通过",
+    "review_note": "保留为履行/验证节点。"
+  }
+]

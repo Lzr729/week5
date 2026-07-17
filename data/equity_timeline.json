@@ -1,0 +1,1240 @@
+[
+  {
+    "timeline_id": "TL-001",
+    "display_sequence": 1,
+    "timeline_group_id": "TG-001",
+    "event_id": "CE-001",
+    "parent_event_id": "CE-001",
+    "event_level": "主事件",
+    "standard_event_name": "2008年上海云汉电子有限公司设立",
+    "event_type": "公司设立",
+    "original_time_label": "2008年4月至5月",
+    "time_precision": "多个节点",
+    "primary_display_time": "2008-05-07",
+    "primary_time_type": "工商设立登记完成日",
+    "time_node_ids": [
+      "TN-001",
+      "TN-002",
+      "TN-003",
+      "TN-004",
+      "TN-005"
+    ],
+    "chronology_relation": "设立申请、验资和工商登记程序节点明确。",
+    "ordering_basis": "以工商设立登记完成日作为主展示节点。",
+    "company_form_before": "尚未设立",
+    "company_form_after": "有限公司",
+    "capital_change_nature": "设立出资",
+    "registered_capital_changed": "是",
+    "shareholder_structure_changed": "是",
+    "capital_before_original": null,
+    "capital_change_original": 50,
+    "capital_after_original": 50,
+    "original_unit": "万元",
+    "capital_before_calculated": null,
+    "capital_change_calculated": null,
+    "capital_after_calculated": null,
+    "calculation_ids": [],
+    "calculation_status": "不适用",
+    "new_shareholders": [
+      "深圳云汉电子",
+      "刘云锋"
+    ],
+    "increased_shareholders": [],
+    "decreased_shareholders": [],
+    "exited_shareholders": [],
+    "shareholder_change_summary": "深圳云汉电子、刘云锋共同申请设立并成为初始股东，各认缴25万元、各持股50%。",
+    "evidence_ids": [
+      "CE-001-E01",
+      "CE-001-E02",
+      "CE-001-E04",
+      "CE-001-E05"
+    ],
+    "value_ids": [
+      "CE-001-V01",
+      "CE-001-V02",
+      "CE-001-V03",
+      "CE-001-V04",
+      "CE-001-V05",
+      "CE-001-V06"
+    ],
+    "pdf_pages": [
+      "55",
+      "56"
+    ],
+    "printed_pages": [
+      "54",
+      "55"
+    ],
+    "core_original_excerpt": "2008年4月17日，深圳市云汉电子有限公司和刘云锋共同申请设立公司前身上海云汉电子有限公司，注册资本为50万元；深圳云汉电子和刘云锋各认缴25万元、各占50%。；2008年5月7日，上海云汉电子有限公司办理完毕工商登记手续，并取得上海市工商行政管理局松江分局下发的《企业法人营业执照》，注册号为310227001377671。",
+    "undisclosed_items": "设立协议名称及签署日；两名股东各自具体缴款日期。",
+    "manual_judgment": "2008-05-07为工商设立登记完成日；2008-05-04仅为验资截止时点，不推定为具体缴款日。",
+    "needs_manual_review": false,
+    "review_status": "已验收通过",
+    "review_note": "阶段四事实已验收；本行仅完成时间线串联。"
+  },
+  {
+    "timeline_id": "TL-002",
+    "display_sequence": 2,
+    "timeline_group_id": "TG-002",
+    "event_id": "CE-002-01",
+    "parent_event_id": "CE-002",
+    "event_level": "子事件",
+    "standard_event_name": "深圳云汉电子向曾烨转让有限公司全部持股",
+    "event_type": "股权转让",
+    "original_time_label": "2009年12月",
+    "time_precision": "月",
+    "primary_display_time": "2009年12月",
+    "primary_time_type": "结果性月份",
+    "time_node_ids": [
+      "TN-006"
+    ],
+    "chronology_relation": "与CE-002-02同月；原文明示先转让、随后增资。",
+    "ordering_basis": "按原文明示先后列为复合事件组第一项。",
+    "company_form_before": "有限公司",
+    "company_form_after": "有限公司",
+    "capital_change_nature": "股权转让（注册资本不变）",
+    "registered_capital_changed": "否",
+    "shareholder_structure_changed": "是",
+    "capital_before_original": null,
+    "capital_change_original": null,
+    "capital_after_original": null,
+    "original_unit": 50,
+    "capital_before_calculated": 0,
+    "capital_change_calculated": 50,
+    "capital_after_calculated": null,
+    "calculation_ids": [
+      "CAL-001"
+    ],
+    "calculation_status": "待阶段七校验",
+    "new_shareholders": [
+      "曾烨"
+    ],
+    "increased_shareholders": [],
+    "decreased_shareholders": [],
+    "exited_shareholders": [
+      "深圳云汉电子"
+    ],
+    "shareholder_change_summary": "深圳云汉电子将其持有的有限公司50%股权全部转让给曾烨并退出；曾烨新增进入。",
+    "evidence_ids": [
+      "CE-001-E05",
+      "CE-002-E02"
+    ],
+    "value_ids": [
+      "CE-002-V01"
+    ],
+    "pdf_pages": [
+      "56"
+    ],
+    "printed_pages": [
+      "55"
+    ],
+    "core_original_excerpt": "深圳市云汉电子有限公司将其持有的有限公司50%股权转让给曾烨，曾烨、刘云锋按原持股比例增资50万元，注册资本增至100万元。",
+    "undisclosed_items": "股份转让协议名称及签署日；转让价款及支付日；工商变更日。",
+    "manual_judgment": "“将其持有的有限公司50%股权转让”结合设立时持股50%，支持全部转让及退出判断。",
+    "needs_manual_review": false,
+    "review_status": "已验收通过",
+    "review_note": "父事件CE-002不重复进入主时间线。"
+  },
+  {
+    "timeline_id": "TL-003",
+    "display_sequence": 3,
+    "timeline_group_id": "TG-002",
+    "event_id": "CE-002-02",
+    "parent_event_id": "CE-002",
+    "event_level": "子事件",
+    "standard_event_name": "曾烨、刘云锋按原持股比例对有限公司增资",
+    "event_type": "增资",
+    "original_time_label": "2009年12月",
+    "time_precision": "月",
+    "primary_display_time": "2009年12月",
+    "primary_time_type": "结果性月份",
+    "time_node_ids": [
+      "TN-007"
+    ],
+    "chronology_relation": "与CE-002-01同月；原文明示在股权转让后按原持股比例增资。",
+    "ordering_basis": "按原文明示先后列为复合事件组第二项。",
+    "company_form_before": "有限公司",
+    "company_form_after": "有限公司",
+    "capital_change_nature": "股东增资",
+    "registered_capital_changed": "是",
+    "shareholder_structure_changed": "否（主体不变）",
+    "capital_before_original": null,
+    "capital_change_original": 50,
+    "capital_after_original": 100,
+    "original_unit": 50,
+    "capital_before_calculated": null,
+    "capital_change_calculated": 100,
+    "capital_after_calculated": null,
+    "calculation_ids": [
+      "CAL-002"
+    ],
+    "calculation_status": "待阶段七校验",
+    "new_shareholders": [],
+    "increased_shareholders": [
+      "曾烨",
+      "刘云锋"
+    ],
+    "decreased_shareholders": [],
+    "exited_shareholders": [],
+    "shareholder_change_summary": "曾烨、刘云锋按原持股比例合计增资50万元，注册资本增至100万元；不计算各自增资额及比例。",
+    "evidence_ids": [
+      "CE-002-E01",
+      "CE-002-E02"
+    ],
+    "value_ids": [
+      "CE-002-V02",
+      "CE-002-V03"
+    ],
+    "pdf_pages": [
+      "56"
+    ],
+    "printed_pages": [
+      "55"
+    ],
+    "core_original_excerpt": "2009年12月，有限公司第一次股权转让及增资，注册资本增至100万元。；深圳市云汉电子有限公司将其持有的有限公司50%股权转让给曾烨，曾烨、刘云锋按原持股比例增资50万元，注册资本增至100万元。",
+    "undisclosed_items": "增资协议或股东会决议日；各自增资额；缴款验资日；工商变更日；增资后持股比例。",
+    "manual_judgment": "按原持股比例增资表明股东主体不变，但本阶段不反推两名股东的具体增资额。",
+    "needs_manual_review": false,
+    "review_status": "已验收通过",
+    "review_note": "父事件CE-002不重复进入主时间线。"
+  },
+  {
+    "timeline_id": "TL-004",
+    "display_sequence": 4,
+    "timeline_group_id": "TG-003",
+    "event_id": "CE-003",
+    "parent_event_id": "CE-003",
+    "event_level": "主事件",
+    "standard_event_name": "刘云锋向曾烨、为赛咨询分别转让有限公司股权",
+    "event_type": "股权转让",
+    "original_time_label": "2014年6月",
+    "time_precision": "月",
+    "primary_display_time": "2014年6月",
+    "primary_time_type": "结果性月份",
+    "time_node_ids": [
+      "TN-008"
+    ],
+    "chronology_relation": "按月份位于CE-002之后、CE-004之前；月内程序时间未披露。",
+    "ordering_basis": "按流程图月份顺序。",
+    "company_form_before": "有限公司",
+    "company_form_after": "有限公司",
+    "capital_change_nature": "股权转让（注册资本不变）",
+    "registered_capital_changed": "否",
+    "shareholder_structure_changed": "是",
+    "capital_before_original": null,
+    "capital_change_original": null,
+    "capital_after_original": 100,
+    "original_unit": 100,
+    "capital_before_calculated": 0,
+    "capital_change_calculated": 100,
+    "capital_after_calculated": null,
+    "calculation_ids": [
+      "CAL-003"
+    ],
+    "calculation_status": "待阶段七校验",
+    "new_shareholders": [
+      "为赛咨询"
+    ],
+    "increased_shareholders": [
+      "曾烨"
+    ],
+    "decreased_shareholders": [
+      "刘云锋"
+    ],
+    "exited_shareholders": [],
+    "shareholder_change_summary": "刘云锋分别向曾烨、为赛咨询转让15.75%、6.85%股权；刘云锋不标记退出。",
+    "evidence_ids": [
+      "CE-003-E01",
+      "CE-003-E02"
+    ],
+    "value_ids": [
+      "CE-003-V01",
+      "CE-003-V02",
+      "CE-003-V03"
+    ],
+    "pdf_pages": [
+      "56"
+    ],
+    "printed_pages": [
+      "55"
+    ],
+    "core_original_excerpt": "“2014年6月，有限公司第二次股权转让，注册资本100万元。”；“刘云锋将其持有的15.75%、6.85%的股权分别转让给曾烨、为赛咨询。”",
+    "undisclosed_items": "股权转让协议及签署日；转让价款及支付日；工商变更日。",
+    "manual_judgment": "原文未使用“全部转让”，故刘云锋仅标记持股减少；为赛咨询此前未出现，标记新增。",
+    "needs_manual_review": false,
+    "review_status": "已验收通过",
+    "review_note": null
+  },
+  {
+    "timeline_id": "TL-005",
+    "display_sequence": 5,
+    "timeline_group_id": "TG-004",
+    "event_id": "CE-004",
+    "parent_event_id": "CE-004",
+    "event_level": "主事件",
+    "standard_event_name": "力源信息、东方富海、芜湖富海共同对有限公司增资",
+    "event_type": "增资",
+    "original_time_label": "2014年8月",
+    "time_precision": "月",
+    "primary_display_time": "2014年8月",
+    "primary_time_type": "结果性月份",
+    "time_node_ids": [
+      "TN-009"
+    ],
+    "chronology_relation": "按月份位于CE-003之后、CE-005之前；月内程序时间未披露。",
+    "ordering_basis": "按流程图月份顺序。",
+    "company_form_before": "有限公司",
+    "company_form_after": "有限公司",
+    "capital_change_nature": "增资（出资形式未在本节点披露）",
+    "registered_capital_changed": "是",
+    "shareholder_structure_changed": "是",
+    "capital_before_original": null,
+    "capital_change_original": 28.205,
+    "capital_after_original": 128.205,
+    "original_unit": 100,
+    "capital_before_calculated": null,
+    "capital_change_calculated": 128.205,
+    "capital_after_calculated": null,
+    "calculation_ids": [
+      "CAL-004"
+    ],
+    "calculation_status": "待阶段七校验",
+    "new_shareholders": [
+      "力源信息",
+      "东方富海",
+      "芜湖富海"
+    ],
+    "increased_shareholders": [],
+    "decreased_shareholders": [],
+    "exited_shareholders": [],
+    "shareholder_change_summary": "三名主体共同增资28.205万元并新增进入，注册资本增至128.205万元。",
+    "evidence_ids": [
+      "CE-004-E01",
+      "CE-004-E02"
+    ],
+    "value_ids": [
+      "CE-004-V01",
+      "CE-004-V02"
+    ],
+    "pdf_pages": [
+      "56"
+    ],
+    "printed_pages": [
+      "55"
+    ],
+    "core_original_excerpt": "“2014年8月，有限公司第二次增资，注册资本增至128.205万元。”；“力源信息、东方富海及芜湖富海共同增资28.205万元。”",
+    "undisclosed_items": "各增资方分别认缴额；增资协议和决议日期；缴款验资日；工商变更日；增资后持股比例。",
+    "manual_judgment": "三名主体此前未在已验收股东事件中出现，方向性标记为新增。",
+    "needs_manual_review": false,
+    "review_status": "已验收通过",
+    "review_note": null
+  },
+  {
+    "timeline_id": "TL-006",
+    "display_sequence": 6,
+    "timeline_group_id": "TG-005",
+    "event_id": "CE-005",
+    "parent_event_id": "CE-005",
+    "event_level": "主事件",
+    "standard_event_name": "力源信息、东方富海、芜湖富海再次共同增资",
+    "event_type": "增资",
+    "original_time_label": "2015年1月",
+    "time_precision": "月",
+    "primary_display_time": "2015年1月",
+    "primary_time_type": "结果性月份",
+    "time_node_ids": [
+      "TN-010"
+    ],
+    "chronology_relation": "按月份位于CE-004之后、CE-006之前；月内程序时间未披露。",
+    "ordering_basis": "按流程图月份顺序。",
+    "company_form_before": "有限公司",
+    "company_form_after": "有限公司",
+    "capital_change_nature": "增资（出资形式未在本节点披露）",
+    "registered_capital_changed": "是",
+    "shareholder_structure_changed": "否（主体不变）",
+    "capital_before_original": null,
+    "capital_change_original": 8.78714,
+    "capital_after_original": 136.9864,
+    "original_unit": 128.205,
+    "capital_before_calculated": null,
+    "capital_change_calculated": 136.99214,
+    "capital_after_calculated": null,
+    "calculation_ids": [
+      "CAL-005"
+    ],
+    "calculation_status": "阶段五已验收／待阶段七校验",
+    "new_shareholders": [],
+    "increased_shareholders": [
+      "力源信息",
+      "东方富海",
+      "芜湖富海"
+    ],
+    "decreased_shareholders": [],
+    "exited_shareholders": [],
+    "shareholder_change_summary": "三名既有股东共同增资；原文披露增资额8.78714万元、注册资本增至136.9864万元。",
+    "evidence_ids": [
+      "CE-005-E01",
+      "CE-005-E02"
+    ],
+    "value_ids": [
+      "CE-005-V01",
+      "CE-005-V02"
+    ],
+    "pdf_pages": [
+      "56"
+    ],
+    "printed_pages": [
+      "55"
+    ],
+    "core_original_excerpt": "“2015年1月，有限公司第三次增资，注册资本增至136.9864万元。”；“力源信息、东方富海及芜湖富海共同增资8.78714万元。”",
+    "undisclosed_items": "协议、决议、缴款、验资和工商变更日期；各方增资额及增资后持股比例。",
+    "manual_judgment": "128.205+8.78714=136.99214万元，与原文增资后注册资本136.9864万元相差0.00574万元；本阶段保留原文并列入阶段七校验。",
+    "needs_manual_review": false,
+    "review_status": "已验收通过",
+    "review_note": "阶段五已确认保留全部原文披露值，不作静默修正；0.00574万元差异转入阶段七正式校验。"
+  },
+  {
+    "timeline_id": "TL-007",
+    "display_sequence": 7,
+    "timeline_group_id": "TG-006",
+    "event_id": "CE-006",
+    "parent_event_id": "CE-006",
+    "event_level": "主事件",
+    "standard_event_name": "有限公司以资本公积按股东持股比例转增注册资本",
+    "event_type": "资本公积转增注册资本",
+    "original_time_label": "2015年3月",
+    "time_precision": "月",
+    "primary_display_time": "2015年3月",
+    "primary_time_type": "结果性月份",
+    "time_node_ids": [
+      "TN-011"
+    ],
+    "chronology_relation": "按月份位于CE-005之后、CE-007之前；月内程序时间未披露。",
+    "ordering_basis": "按流程图月份顺序。",
+    "company_form_before": "有限公司",
+    "company_form_after": "有限公司",
+    "capital_change_nature": "资本公积转增",
+    "registered_capital_changed": "是",
+    "shareholder_structure_changed": "否（主体及比例不变）",
+    "capital_before_original": null,
+    "capital_change_original": null,
+    "capital_after_original": 2000,
+    "original_unit": 136.9864,
+    "capital_before_calculated": 1863.0136,
+    "capital_change_calculated": null,
+    "capital_after_calculated": null,
+    "calculation_ids": [
+      "CAL-006"
+    ],
+    "calculation_status": "待阶段七校验",
+    "new_shareholders": [],
+    "increased_shareholders": [
+      "各股东（按原持股比例）"
+    ],
+    "decreased_shareholders": [],
+    "exited_shareholders": [],
+    "shareholder_change_summary": "新增注册资本由各股东按持股比例以资本公积转增，注册资本增至2,000万元；不是外部现金融资。",
+    "evidence_ids": [
+      "CE-006-E01",
+      "CE-006-E02"
+    ],
+    "value_ids": [
+      "CE-006-V01"
+    ],
+    "pdf_pages": [
+      "56"
+    ],
+    "printed_pages": [
+      "55"
+    ],
+    "core_original_excerpt": "“2015年3月，有限公司第四次增资，注册资本增至2,000万元。”；“新增注册资本由各股东按照其持股比例以资本公积转增。”",
+    "undisclosed_items": "股东会决议日；验资日；工商变更日；逐股东转增数值。",
+    "manual_judgment": "转增前后股东主体及持股比例不变；计算的资本增加额不代表现金投入。",
+    "needs_manual_review": false,
+    "review_status": "已验收通过",
+    "review_note": null
+  },
+  {
+    "timeline_id": "TL-008",
+    "display_sequence": 8,
+    "timeline_group_id": "TG-007",
+    "event_id": "CE-007",
+    "parent_event_id": "CE-007",
+    "event_level": "主事件",
+    "standard_event_name": "深创投等六方共同对有限公司增资",
+    "event_type": "增资",
+    "original_time_label": "2015年8月",
+    "time_precision": "月",
+    "primary_display_time": "2015年8月",
+    "primary_time_type": "结果性月份",
+    "time_node_ids": [
+      "TN-012"
+    ],
+    "chronology_relation": "按月份位于CE-006之后、CE-008整体变更基准日前后；月内程序时间未披露。",
+    "ordering_basis": "按流程图月份顺序。",
+    "company_form_before": "有限公司",
+    "company_form_after": "有限公司",
+    "capital_change_nature": "增资（出资形式未在本节点披露）",
+    "registered_capital_changed": "是",
+    "shareholder_structure_changed": "是",
+    "capital_before_original": null,
+    "capital_change_original": 158.2733,
+    "capital_after_original": 2158.2733,
+    "original_unit": 2000,
+    "capital_before_calculated": null,
+    "capital_change_calculated": 2158.2733,
+    "capital_after_calculated": null,
+    "calculation_ids": [
+      "CAL-007"
+    ],
+    "calculation_status": "待阶段七校验",
+    "new_shareholders": [
+      "深创投",
+      "丰利财富",
+      "镇江红土",
+      "昆山红土",
+      "富海深湾"
+    ],
+    "increased_shareholders": [
+      "芜湖富海"
+    ],
+    "decreased_shareholders": [],
+    "exited_shareholders": [],
+    "shareholder_change_summary": "六方共同增资158.2733万元；其中五方新增，芜湖富海为既有股东继续增资；注册资本增至2,158.2733万元。",
+    "evidence_ids": [
+      "CE-007-E01",
+      "CE-007-E02"
+    ],
+    "value_ids": [
+      "CE-007-V01",
+      "CE-007-V02"
+    ],
+    "pdf_pages": [
+      "57"
+    ],
+    "printed_pages": [
+      "56"
+    ],
+    "core_original_excerpt": "“2015年8月，有限公司第五次增资，注册资本增至2,158.2733万元。”；“深创投、丰利财富、镇江红土、昆山红土、富海深湾、芜湖富海共同增资158.2733万元。”",
+    "undisclosed_items": "各方分别认缴额；协议、决议、缴款验资及工商变更日期；增资后持股比例。",
+    "manual_judgment": "芜湖富海已在CE-004进入，本次标记持股增加；其他五方标记新增。",
+    "needs_manual_review": false,
+    "review_status": "已验收通过",
+    "review_note": null
+  },
+  {
+    "timeline_id": "TL-009",
+    "display_sequence": 9,
+    "timeline_group_id": "TG-008",
+    "event_id": "CE-008",
+    "parent_event_id": "CE-008",
+    "event_level": "主事件",
+    "standard_event_name": "上海云汉电子有限公司整体变更设立云汉芯城股份公司",
+    "event_type": "整体变更",
+    "original_time_label": "2015年8月31日至12月3日",
+    "time_precision": "多个节点",
+    "primary_display_time": "2015-12-03",
+    "primary_time_type": "工商整体变更完成日",
+    "time_node_ids": [
+      "TN-013",
+      "TN-014",
+      "TN-015",
+      "TN-016",
+      "TN-017",
+      "TN-018",
+      "TN-019"
+    ],
+    "chronology_relation": "基准日、决议、审计评估、发起人协议、创立大会、验资及工商核准节点明确。",
+    "ordering_basis": "以工商核准并换发营业执照日作为主展示节点。",
+    "company_form_before": "有限公司",
+    "company_form_after": "股份公司",
+    "capital_change_nature": "经审计净资产折股整体变更",
+    "registered_capital_changed": "是",
+    "shareholder_structure_changed": "否（发起人主体连续）",
+    "capital_before_original": null,
+    "capital_change_original": null,
+    "capital_after_original": 4000,
+    "original_unit": "万元（注册资本）；40,000,000股（股本）",
+    "capital_before_calculated": null,
+    "capital_change_calculated": null,
+    "capital_after_calculated": null,
+    "calculation_ids": [],
+    "calculation_status": "不计算：计量基础变化",
+    "new_shareholders": [],
+    "increased_shareholders": [],
+    "decreased_shareholders": [],
+    "exited_shareholders": [],
+    "shareholder_change_summary": "11名原股东以经审计净资产折为4,000万股，注册资本4,000万元；公司形式由有限公司变更为股份公司。",
+    "evidence_ids": [
+      "CE-008-E01",
+      "CE-008-E02",
+      "CE-008-E03",
+      "CE-008-E04",
+      "CE-008-E05",
+      "CE-008-E06",
+      "CE-008-E07"
+    ],
+    "value_ids": [
+      "CE-008-V01",
+      "CE-008-V02",
+      "CE-008-V03",
+      "CE-008-V04",
+      "CE-008-V05",
+      "CE-008-V06"
+    ],
+    "pdf_pages": [
+      "53",
+      "54",
+      "54—55"
+    ],
+    "printed_pages": [
+      "52",
+      "53",
+      "53—54"
+    ],
+    "core_original_excerpt": "2015年9月1日股东会决议，以2015年8月31日为基准日整体变更。；2015年10月15日全体发起人签署发起人协议，按1.1253:1折为4,000万股。；2015年12月3日工商核准整体变更并换发股份公司营业执照。",
+    "undisclosed_items": "无影响本阶段时间线的关键缺口。",
+    "manual_judgment": "有限公司注册资本与股份公司股本虽均以金额或股数列示，但整体变更涉及净资产折股，阶段五不直接计算前后资本差额。",
+    "needs_manual_review": false,
+    "review_status": "已验收通过",
+    "review_note": "逐发起人持股快照留待阶段六。"
+  },
+  {
+    "timeline_id": "TL-010",
+    "display_sequence": 10,
+    "timeline_group_id": "TG-009",
+    "event_id": "CE-009",
+    "parent_event_id": "CE-009",
+    "event_level": "主事件",
+    "standard_event_name": "丰利财富向天健创投转让其持有的全部股份",
+    "event_type": "股份转让",
+    "original_time_label": "2018年4月",
+    "time_precision": "日＋月",
+    "primary_display_time": "2018-04-28",
+    "primary_time_type": "股份转让协议日",
+    "time_node_ids": [
+      "TN-020",
+      "TN-021"
+    ],
+    "chronology_relation": "协议日明确；完成日仅由2018年4月转让后股东表反映。",
+    "ordering_basis": "使用精确协议日作为主展示节点，并注明完成日未单独披露。",
+    "company_form_before": "股份公司",
+    "company_form_after": "股份公司",
+    "capital_change_nature": "股份转让（注册资本不变）",
+    "registered_capital_changed": "否",
+    "shareholder_structure_changed": "是",
+    "capital_before_original": null,
+    "capital_change_original": null,
+    "capital_after_original": null,
+    "original_unit": 4000,
+    "capital_before_calculated": 0,
+    "capital_change_calculated": 4000,
+    "capital_after_calculated": null,
+    "calculation_ids": [
+      "CAL-008"
+    ],
+    "calculation_status": "待阶段七校验",
+    "new_shareholders": [
+      "天健创投"
+    ],
+    "increased_shareholders": [],
+    "decreased_shareholders": [],
+    "exited_shareholders": [
+      "丰利财富"
+    ],
+    "shareholder_change_summary": "丰利财富转让全部666,680股并退出；天健创投受让进入，转让价款1,000万元。",
+    "evidence_ids": [
+      "CE-009-E01",
+      "CE-009-E02"
+    ],
+    "value_ids": [
+      "CE-009-V01",
+      "CE-009-V02",
+      "CE-009-V03"
+    ],
+    "pdf_pages": [
+      "58",
+      "58—59"
+    ],
+    "printed_pages": [
+      "57",
+      "57—58"
+    ],
+    "core_original_excerpt": "2018年4月28日，丰利财富将全部666,680股转让给天健创投，价款1,000万元。；转让后股东表列示天健创投666,680股、1.67%，不再列示丰利财富。",
+    "undisclosed_items": "转让价款支付日；工商登记日或独立完成日。",
+    "manual_judgment": "协议使用“全部”且转让后股东表不再列示丰利财富，支持退出判断。",
+    "needs_manual_review": false,
+    "review_status": "已验收通过",
+    "review_note": null
+  },
+  {
+    "timeline_id": "TL-011",
+    "display_sequence": 11,
+    "timeline_group_id": "TG-010",
+    "event_id": "CE-010-01",
+    "parent_event_id": "CE-010",
+    "event_level": "子事件",
+    "standard_event_name": "国科瑞华等六方现金认缴新增注册资本",
+    "event_type": "增资",
+    "original_time_label": "2018年6月至7月",
+    "time_precision": "多个节点",
+    "primary_display_time": "2018-07-27",
+    "primary_time_type": "六方增资工商登记全部完成日",
+    "time_node_ids": [
+      "TN-022",
+      "TN-023",
+      "TN-024",
+      "TN-025",
+      "TN-026"
+    ],
+    "chronology_relation": "属于CE-010复合安排；各子事件的法律先后未由原文完整披露。",
+    "ordering_basis": "按阶段四子事件编号排列，不将显示顺序解释为实际行为先后。",
+    "company_form_before": "股份公司",
+    "company_form_after": "股份公司",
+    "capital_change_nature": "现金增资",
+    "registered_capital_changed": "是",
+    "shareholder_structure_changed": "是",
+    "capital_before_original": null,
+    "capital_change_original": null,
+    "capital_after_original": null,
+    "original_unit": 4000,
+    "capital_before_calculated": 515,
+    "capital_change_calculated": null,
+    "capital_after_calculated": null,
+    "calculation_ids": [
+      "CAL-009",
+      "CAL-011",
+      "CAL-012"
+    ],
+    "calculation_status": "待阶段七校验；父事件组口径",
+    "new_shareholders": [
+      "国科瑞华",
+      "CASREV FUND",
+      "中科贵银",
+      "夏东",
+      "南山富海",
+      "珠海拓域"
+    ],
+    "increased_shareholders": [],
+    "decreased_shareholders": [],
+    "exited_shareholders": [],
+    "shareholder_change_summary": "六方分别现金出资并认缴新增注册资本；计算合计新增注册资本515万元。第一批、最终注册资本属于父事件组口径。",
+    "evidence_ids": [
+      "CE-010-E01",
+      "CE-010-E03",
+      "CE-010-E04",
+      "CE-010-E05",
+      "CE-010-E06"
+    ],
+    "value_ids": [
+      "CE-010-V01",
+      "CE-010-V02",
+      "CE-010-V03",
+      "CE-010-V04",
+      "CE-010-V05",
+      "CE-010-V06",
+      "CE-010-V07",
+      "CE-010-V08",
+      "CE-010-V09",
+      "CE-010-V10",
+      "CE-010-V11",
+      "CE-010-V12",
+      "CE-010-V29",
+      "CE-010-V30"
+    ],
+    "pdf_pages": [
+      "59",
+      "60",
+      "60—61"
+    ],
+    "printed_pages": [
+      "58",
+      "59",
+      "59—60"
+    ],
+    "core_original_excerpt": "2018年6月12日签署增资与股权转让协议，列明六方增资及四笔股份转让。；2018年6月28日完成夏东、南山富海、珠海拓域及四名激励对象的工商变更。；2018年7月27日完成国科瑞华、CASREV FUND、中科贵银增资登记。",
+    "undisclosed_items": "六方实际缴款日期；本子事件独立完成后的注册资本（原文仅披露分批及父事件组结果）。",
+    "manual_judgment": "515万元为六项原文认缴额的计算合计，不标记为原文披露合计值；4,635万元属于CE-010父事件组最终结果。",
+    "needs_manual_review": false,
+    "review_status": "已验收通过",
+    "review_note": "父事件CE-010不重复进入主时间线。"
+  },
+  {
+    "timeline_id": "TL-012",
+    "display_sequence": 12,
+    "timeline_group_id": "TG-010",
+    "event_id": "CE-010-02",
+    "parent_event_id": "CE-010",
+    "event_level": "子事件",
+    "standard_event_name": "李文发、秦国君、李剑峰、周雪峰股权激励增资",
+    "event_type": "股权激励增资",
+    "original_time_label": "2018年6月",
+    "time_precision": "多个节点",
+    "primary_display_time": "2018-06-28",
+    "primary_time_type": "工商变更登记日",
+    "time_node_ids": [
+      "TN-027",
+      "TN-028",
+      "TN-029"
+    ],
+    "chronology_relation": "属于CE-010复合安排；与三名外部增资方同批办理工商变更。",
+    "ordering_basis": "按阶段四子事件编号排列，不将显示顺序解释为实际行为先后。",
+    "company_form_before": "股份公司",
+    "company_form_after": "股份公司",
+    "capital_change_nature": "股权激励增资（现金按每股1元认缴）",
+    "registered_capital_changed": "是",
+    "shareholder_structure_changed": "是",
+    "capital_before_original": null,
+    "capital_change_original": null,
+    "capital_after_original": null,
+    "original_unit": 4000,
+    "capital_before_calculated": 120,
+    "capital_change_calculated": null,
+    "capital_after_calculated": null,
+    "calculation_ids": [
+      "CAL-010",
+      "CAL-011",
+      "CAL-012"
+    ],
+    "calculation_status": "待阶段七校验；父事件组口径",
+    "new_shareholders": [
+      "李文发",
+      "秦国君",
+      "李剑峰",
+      "周雪峰"
+    ],
+    "increased_shareholders": [],
+    "decreased_shareholders": [],
+    "exited_shareholders": [],
+    "shareholder_change_summary": "四名管理团队成员合计认缴新增注册资本120万元，成为直接股东；本子事件无独立变更后注册资本披露。",
+    "evidence_ids": [
+      "CE-010-E02",
+      "CE-010-E03",
+      "CE-010-E05",
+      "CE-010-E06"
+    ],
+    "value_ids": [
+      "CE-010-V13",
+      "CE-010-V14",
+      "CE-010-V15",
+      "CE-010-V16",
+      "CE-010-V17",
+      "CE-010-V18",
+      "CE-010-V19",
+      "CE-010-V20",
+      "CE-010-V29"
+    ],
+    "pdf_pages": [
+      "60",
+      "60—61"
+    ],
+    "printed_pages": [
+      "59",
+      "59—60"
+    ],
+    "core_original_excerpt": "2018年6月12日股东大会同意四名管理团队成员合计认缴新增注册资本120万元。；2018年6月28日完成夏东、南山富海、珠海拓域及四名激励对象的工商变更。",
+    "undisclosed_items": "独立增资协议；实际缴款日期；本子事件独立变更后的注册资本。",
+    "manual_judgment": "120万元为四项原文认缴额计算合计；2018-06-28的4,264.3373万元同时包含三名外部增资方，不归属于本子事件单独结果。",
+    "needs_manual_review": false,
+    "review_status": "已验收通过",
+    "review_note": "父事件CE-010不重复进入主时间线。"
+  },
+  {
+    "timeline_id": "TL-013",
+    "display_sequence": 13,
+    "timeline_group_id": "TG-010",
+    "event_id": "CE-010-03",
+    "parent_event_id": "CE-010",
+    "event_level": "子事件",
+    "standard_event_name": "曾烨、刘云锋向富海节能、临港投资、鸿迪投资转让股份",
+    "event_type": "股份转让",
+    "original_time_label": "2018年6月至7月",
+    "time_precision": "日＋区间",
+    "primary_display_time": "2018-06-12",
+    "primary_time_type": "增资与股权转让协议日",
+    "time_node_ids": [
+      "TN-030",
+      "TN-031",
+      "TN-032"
+    ],
+    "chronology_relation": "属于CE-010复合安排；股份转让相对两类增资的实际完成先后未单独披露。",
+    "ordering_basis": "按阶段四子事件编号排列，不将显示顺序解释为实际行为先后。",
+    "company_form_before": "股份公司",
+    "company_form_after": "股份公司",
+    "capital_change_nature": "股份转让（注册资本不变）",
+    "registered_capital_changed": "否",
+    "shareholder_structure_changed": "是",
+    "capital_before_original": null,
+    "capital_change_original": null,
+    "capital_after_original": null,
+    "original_unit": "不适用",
+    "capital_before_calculated": null,
+    "capital_change_calculated": null,
+    "capital_after_calculated": null,
+    "calculation_ids": [
+      "CAL-011",
+      "CAL-012"
+    ],
+    "calculation_status": "本子事件不计算具体资本衔接",
+    "new_shareholders": [
+      "富海节能",
+      "临港投资",
+      "鸿迪投资"
+    ],
+    "increased_shareholders": [],
+    "decreased_shareholders": [
+      "曾烨",
+      "刘云锋"
+    ],
+    "exited_shareholders": [],
+    "shareholder_change_summary": "曾烨、刘云锋实施四笔股份转让；两人均继续持股，三名受让方新增进入。",
+    "evidence_ids": [
+      "CE-010-E01",
+      "CE-010-E05"
+    ],
+    "value_ids": [
+      "CE-010-V21",
+      "CE-010-V22",
+      "CE-010-V23",
+      "CE-010-V24",
+      "CE-010-V25",
+      "CE-010-V26",
+      "CE-010-V27",
+      "CE-010-V28"
+    ],
+    "pdf_pages": [
+      "59",
+      "60—61"
+    ],
+    "printed_pages": [
+      "58",
+      "59—60"
+    ],
+    "core_original_excerpt": "2018年6月12日签署增资与股权转让协议，列明六方增资及四笔股份转让。；变更后股东表列示六名外部增资方、四名激励对象及三名股份受让方。",
+    "undisclosed_items": "各笔价款支付日；股份转让独立完成日；工商登记日；相对同组增资的实际先后。",
+    "manual_judgment": "因同组增资同步发生且相对顺序未披露，不为本子事件绑定具体变更前后注册资本。",
+    "needs_manual_review": false,
+    "review_status": "已验收通过",
+    "review_note": "父事件CE-010不重复进入主时间线。"
+  },
+  {
+    "timeline_id": "TL-014",
+    "display_sequence": 14,
+    "timeline_group_id": "TG-011",
+    "event_id": "CE-011",
+    "parent_event_id": "CE-011",
+    "event_level": "主事件",
+    "standard_event_name": "为赛咨询向李文发、秦国君转让股份并配套办理退伙",
+    "event_type": "股份转让｜关联退伙安排",
+    "original_time_label": "2019年8月12日至13日",
+    "time_precision": "多个节点",
+    "primary_display_time": "2019-08-13",
+    "primary_time_type": "股份转让协议日",
+    "time_node_ids": [
+      "TN-033",
+      "TN-034",
+      "TN-035"
+    ],
+    "chronology_relation": "配套退伙协议日为2019-08-12，股份转让协议日为2019-08-13。",
+    "ordering_basis": "以直接影响发行人股份的股份转让协议日作为主展示节点。",
+    "company_form_before": "股份公司",
+    "company_form_after": "股份公司",
+    "capital_change_nature": "股份转让（注册资本不变）",
+    "registered_capital_changed": "否",
+    "shareholder_structure_changed": "否（主体不变）",
+    "capital_before_original": null,
+    "capital_change_original": null,
+    "capital_after_original": null,
+    "original_unit": 4635,
+    "capital_before_calculated": 0,
+    "capital_change_calculated": 4635,
+    "capital_after_calculated": null,
+    "calculation_ids": [
+      "CAL-013"
+    ],
+    "calculation_status": "待阶段七校验",
+    "new_shareholders": [],
+    "increased_shareholders": [
+      "李文发",
+      "秦国君"
+    ],
+    "decreased_shareholders": [
+      "为赛咨询"
+    ],
+    "exited_shareholders": [],
+    "shareholder_change_summary": "为赛咨询向李文发、秦国君各转让40万股；两名受让方直接持股均增至60万股，为赛咨询仍持股。",
+    "evidence_ids": [
+      "CE-011-E01",
+      "CE-011-E02",
+      "CE-011-E03"
+    ],
+    "value_ids": [
+      "CE-011-V01",
+      "CE-011-V02",
+      "CE-011-V03",
+      "CE-011-V04",
+      "CE-011-V05",
+      "CE-011-V06"
+    ],
+    "pdf_pages": [
+      "61",
+      "61—62"
+    ],
+    "printed_pages": [
+      "60",
+      "60—61"
+    ],
+    "core_original_excerpt": "2019年8月13日，为赛咨询分别向李文发、秦国君转让40万股，价款各40万元。；两人于2019年8月12日分别转出为赛咨询21.58%财产份额并退伙。；转让后为赛咨询持股1,053,360股，李文发、秦国君各持600,000股。",
+    "undisclosed_items": "股份转让价款支付日；工商登记日或独立完成日。",
+    "manual_judgment": "李文发、秦国君退出为赛咨询不等于退出发行人；二人在本事件前已为直接股东，因此标记持股增加而非新增。",
+    "needs_manual_review": false,
+    "review_status": "已验收通过",
+    "review_note": "配套退伙只作为时间节点，不另建发行人股本事件。"
+  },
+  {
+    "timeline_id": "TL-015",
+    "display_sequence": 15,
+    "timeline_group_id": "TG-012",
+    "event_id": "CE-012",
+    "parent_event_id": "CE-012",
+    "event_level": "主事件",
+    "standard_event_name": "火炬电子现金认购发行人新增股份",
+    "event_type": "增资",
+    "original_time_label": "2020年5月20日至28日",
+    "time_precision": "多个节点",
+    "primary_display_time": "2020-05-28",
+    "primary_time_type": "市场监督管理变更备案日",
+    "time_node_ids": [
+      "TN-036",
+      "TN-037",
+      "TN-038",
+      "TN-039"
+    ],
+    "chronology_relation": "股东大会决议与增资协议同日，工商变更备案日明确；验资报告后补出具。",
+    "ordering_basis": "以市场监督管理变更备案日作为主展示节点。",
+    "company_form_before": "股份公司",
+    "company_form_after": "股份公司",
+    "capital_change_nature": "现金增资",
+    "registered_capital_changed": "是",
+    "shareholder_structure_changed": "是",
+    "capital_before_original": 4635,
+    "capital_change_original": null,
+    "capital_after_original": 4748.0488,
+    "original_unit": 4635,
+    "capital_before_calculated": 113.0488,
+    "capital_change_calculated": 4748.0488,
+    "capital_after_calculated": null,
+    "calculation_ids": [
+      "CAL-014"
+    ],
+    "calculation_status": "待阶段七校验",
+    "new_shareholders": [
+      "火炬电子"
+    ],
+    "increased_shareholders": [],
+    "decreased_shareholders": [],
+    "exited_shareholders": [],
+    "shareholder_change_summary": "火炬电子现金出资5,000万元认购1,130,488股并新增进入；注册资本由4,635万元增至4,748.0488万元。",
+    "evidence_ids": [
+      "CE-012-E01",
+      "CE-012-E02",
+      "CE-012-E03",
+      "CE-012-E04"
+    ],
+    "value_ids": [
+      "CE-012-V01",
+      "CE-012-V02",
+      "CE-012-V03",
+      "CE-012-V04",
+      "CE-012-V05",
+      "CE-012-V06"
+    ],
+    "pdf_pages": [
+      "62",
+      "62—63"
+    ],
+    "printed_pages": [
+      "61",
+      "61—62"
+    ],
+    "core_original_excerpt": "2020年5月20日股东大会决议并签署增资协议，火炬电子现金5,000万元认购113.0488万股。；2020年5月28日完成市场监督管理变更备案。",
+    "undisclosed_items": "实际缴款日期；验资报告虽于2020-12-16出具，不替代2020-05-28变更备案完成节点。",
+    "manual_judgment": "新增股份按1股对应1元注册资本换算的113.0488万元属于计算值，与原文前后注册资本相衔接。",
+    "needs_manual_review": false,
+    "review_status": "已验收通过",
+    "review_note": "不在阶段五复算每股价格或投后估值。"
+  },
+  {
+    "timeline_id": "TL-016",
+    "display_sequence": 16,
+    "timeline_group_id": "TG-013",
+    "event_id": "CE-013-01",
+    "parent_event_id": "CE-013",
+    "event_level": "子事件",
+    "standard_event_name": "厦门西堤、中小企业基金认购新增股份",
+    "event_type": "增资",
+    "original_time_label": "2020年9月15日至23日",
+    "time_precision": "多个节点",
+    "primary_display_time": "2020-09-23",
+    "primary_time_type": "工商变更登记日",
+    "time_node_ids": [
+      "TN-040",
+      "TN-041",
+      "TN-042"
+    ],
+    "chronology_relation": "与CE-013-02同月；两类行为相对先后未披露。",
+    "ordering_basis": "按阶段四子事件编号排列，不将显示顺序解释为实际行为先后。",
+    "company_form_before": "股份公司",
+    "company_form_after": "股份公司",
+    "capital_change_nature": "现金增资",
+    "registered_capital_changed": "是",
+    "shareholder_structure_changed": "是",
+    "capital_before_original": 4748.0488,
+    "capital_change_original": null,
+    "capital_after_original": 4883.7074,
+    "original_unit": 4748.0488,
+    "capital_before_calculated": 135.6586,
+    "capital_change_calculated": 4883.7074,
+    "capital_after_calculated": null,
+    "calculation_ids": [
+      "CAL-015"
+    ],
+    "calculation_status": "待阶段七校验",
+    "new_shareholders": [
+      "厦门西堤",
+      "中小企业基金"
+    ],
+    "increased_shareholders": [],
+    "decreased_shareholders": [],
+    "exited_shareholders": [],
+    "shareholder_change_summary": "厦门西堤、中小企业基金分别现金出资5,000万元、2,000万元认购新增股份并新增进入。",
+    "evidence_ids": [
+      "CE-013-E01",
+      "CE-013-E02",
+      "CE-013-E04",
+      "CE-013-E05"
+    ],
+    "value_ids": [
+      "CE-013-V01",
+      "CE-013-V02",
+      "CE-013-V03",
+      "CE-013-V04",
+      "CE-013-V05",
+      "CE-013-V06"
+    ],
+    "pdf_pages": [
+      "63",
+      "63—64",
+      "64",
+      "64—65"
+    ],
+    "printed_pages": [
+      "62",
+      "62—63",
+      "63",
+      "63—64"
+    ],
+    "core_original_excerpt": "2020年9月15日股东大会同意厦门西堤、中小企业基金认购新增股份。；2020年9月23日完成工商变更登记；原文披露每股价格约51.6元。",
+    "undisclosed_items": "增资协议具体签署日；实际缴款日；与同月股份转让的实际先后。",
+    "manual_judgment": "两笔新增股份合计换算的135.6586万元属于计算值；阶段五不复算原文每股价格和投后估值。",
+    "needs_manual_review": false,
+    "review_status": "已验收通过",
+    "review_note": "父事件CE-013不重复进入主时间线。"
+  },
+  {
+    "timeline_id": "TL-017",
+    "display_sequence": 17,
+    "timeline_group_id": "TG-013",
+    "event_id": "CE-013-02",
+    "parent_event_id": "CE-013",
+    "event_level": "子事件",
+    "standard_event_name": "曾烨、刘云锋、李文发、秦国君实施十笔股份转让",
+    "event_type": "股份转让",
+    "original_time_label": "2020年9月",
+    "time_precision": "月",
+    "primary_display_time": "2020年9月",
+    "primary_time_type": "结果性月份",
+    "time_node_ids": [
+      "TN-043"
+    ],
+    "chronology_relation": "与CE-013-01同月；股份转让协议具体日期及两类行为相对先后未披露。",
+    "ordering_basis": "按阶段四子事件编号排列，不将显示顺序解释为实际行为先后。",
+    "company_form_before": "股份公司",
+    "company_form_after": "股份公司",
+    "capital_change_nature": "股份转让（注册资本不变）",
+    "registered_capital_changed": "否",
+    "shareholder_structure_changed": "是",
+    "capital_before_original": null,
+    "capital_change_original": null,
+    "capital_after_original": null,
+    "original_unit": 4883.7074,
+    "capital_before_calculated": 0,
+    "capital_change_calculated": 4883.7074,
+    "capital_after_calculated": null,
+    "calculation_ids": [
+      "CAL-016"
+    ],
+    "calculation_status": "待阶段七校验",
+    "new_shareholders": [
+      "郦韩英",
+      "福建开京",
+      "沈笑彦",
+      "衣嘉平",
+      "余满芬",
+      "崔振南",
+      "湘裕君源"
+    ],
+    "increased_shareholders": [
+      "鸿迪投资"
+    ],
+    "decreased_shareholders": [
+      "曾烨",
+      "刘云锋",
+      "李文发",
+      "秦国君"
+    ],
+    "exited_shareholders": [],
+    "shareholder_change_summary": "四名转让方向八名受让主体实施十笔股份转让，原文直接披露转让股份合计1,659,535股；四名转让方均继续持股。",
+    "evidence_ids": [
+      "CE-013-E03",
+      "CE-013-E05"
+    ],
+    "value_ids": [
+      "CE-013-V07",
+      "CE-013-V08",
+      "CE-013-V09",
+      "CE-013-V10",
+      "CE-013-V11",
+      "CE-013-V12",
+      "CE-013-V13",
+      "CE-013-V14",
+      "CE-013-V15",
+      "CE-013-V16",
+      "CE-013-V17",
+      "CE-013-V18",
+      "CE-013-V19",
+      "CE-013-V20",
+      "CE-013-V21",
+      "CE-013-V22",
+      "CE-013-V23",
+      "CE-013-V24",
+      "CE-013-V25",
+      "CE-013-V26",
+      "CE-013-V27"
+    ],
+    "pdf_pages": [
+      "64",
+      "64—65"
+    ],
+    "printed_pages": [
+      "63",
+      "63—64"
+    ],
+    "core_original_excerpt": "原文表格列示四名转让方向八名受让主体实施十笔股份转让。；变更后股东表列示两名增资方及各股份受让方，四名转让方仍持股。",
+    "undisclosed_items": "各股份转让协议具体签署日；价款支付日；独立完成日；与同月增资的实际先后。",
+    "manual_judgment": "鸿迪投资已在CE-010-03进入，本次标记持股增加；其余七名受让方新增。四名转让方均未全部退出。",
+    "needs_manual_review": false,
+    "review_status": "已验收通过",
+    "review_note": "父事件CE-013不重复进入主时间线。"
+  }
+]

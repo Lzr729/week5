@@ -1,0 +1,53 @@
+[
+  {
+    "review_item_id": "RV-001",
+    "event_id": "CE-005",
+    "review_type": "数值衔接差异",
+    "observed_fact": "原文披露前次注册资本128.205万元、本次共同增资8.78714万元、本次增资后注册资本136.9864万元。",
+    "calculated_or_judgment_value": "128.205 + 8.78714 = 136.99214万元",
+    "difference_or_uncertainty": "计算值较原文增资后注册资本高0.00574万元。",
+    "source_ids": [
+      "CE-004-V02",
+      "CE-005-V01",
+      "CE-005-V02",
+      "CAL-005"
+    ],
+    "recommended_action": "阶段五保留全部原文值，不修正；阶段七核对是否为原文数值、精度、舍入或披露差异。",
+    "status": "阶段五已确认／待阶段七校验",
+    "review_note": "阶段五已确认保留原文值并不作修正；该差异必须在阶段七继续进行正式数值校验。"
+  },
+  {
+    "review_item_id": "RV-002",
+    "event_id": "CE-010-01｜CE-010-02｜CE-010-03",
+    "review_type": "复合事件内部排序",
+    "observed_fact": "原文披露2018年6月12日协议/决议、6月28日第一批变更、7月27日第二批变更。",
+    "calculated_or_judgment_value": "主表按已验收子事件编号展示。",
+    "difference_or_uncertainty": "子事件展示顺序不等同于全部法律行为、认购缴款和交割的实际逐笔先后。",
+    "source_ids": [
+      "CE-010-E01",
+      "CE-010-E02",
+      "CE-010-E03",
+      "CE-010-E04"
+    ],
+    "recommended_action": "保留节点明细和“展示顺序不代表事实顺序”的说明。",
+    "status": "已验收通过",
+    "review_note": "时间线排序边界已验收；不推定原文未披露的逐笔先后。"
+  },
+  {
+    "review_item_id": "RV-003",
+    "event_id": "CE-013-01｜CE-013-02",
+    "review_type": "同月事件相对顺序",
+    "observed_fact": "增资决议日为2020年9月15日，工商变更日为2020年9月23日；股份转让协议和交割日未披露。",
+    "calculated_or_judgment_value": "主表按子事件编号先列增资、后列转让。",
+    "difference_or_uncertainty": "无法据现有原文确认十笔股份转让与增资之间的实际逐笔先后。",
+    "source_ids": [
+      "CE-013-E01",
+      "CE-013-E03",
+      "CE-013-E04",
+      "CE-013-E05"
+    ],
+    "recommended_action": "标记为“同月顺序未披露”，不得由行号推定实际先后。",
+    "status": "已验收通过",
+    "review_note": "同月事件边界已验收；阶段六制作结构快照时继续保留该限制。"
+  }
+]
