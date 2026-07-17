@@ -1,0 +1,1338 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "stage06.schema.json",
+  "title": "Stage 06 compact bundle",
+  "description": "阶段六统一数据契约；$defs同时作为字段级数据字典。",
+  "type": "object",
+  "required": [
+    "metadata",
+    "tables"
+  ],
+  "properties": {
+    "metadata": {
+      "type": "object",
+      "required": [
+        "stage",
+        "status",
+        "record_counts",
+        "primary_fact_source"
+      ],
+      "properties": {
+        "stage": {
+          "const": 6
+        },
+        "stage_name": {
+          "type": "string"
+        },
+        "status": {
+          "const": "final_approved"
+        },
+        "approval_date": {
+          "type": "string"
+        },
+        "primary_fact_source": {
+          "type": "string"
+        },
+        "record_counts": {
+          "type": "object",
+          "required": [
+            "parties",
+            "increase_events",
+            "subscriptions",
+            "transfer_events",
+            "transfer_lots",
+            "snapshots",
+            "snapshot_holdings",
+            "calculations",
+            "evidence_reviews",
+            "acceptance_checks",
+            "audit_log"
+          ],
+          "properties": {
+            "parties": {
+              "type": "integer",
+              "minimum": 0
+            },
+            "increase_events": {
+              "type": "integer",
+              "minimum": 0
+            },
+            "subscriptions": {
+              "type": "integer",
+              "minimum": 0
+            },
+            "transfer_events": {
+              "type": "integer",
+              "minimum": 0
+            },
+            "transfer_lots": {
+              "type": "integer",
+              "minimum": 0
+            },
+            "snapshots": {
+              "type": "integer",
+              "minimum": 0
+            },
+            "snapshot_holdings": {
+              "type": "integer",
+              "minimum": 0
+            },
+            "calculations": {
+              "type": "integer",
+              "minimum": 0
+            },
+            "evidence_reviews": {
+              "type": "integer",
+              "minimum": 0
+            },
+            "acceptance_checks": {
+              "type": "integer",
+              "minimum": 0
+            },
+            "audit_log": {
+              "type": "integer",
+              "minimum": 0
+            }
+          },
+          "additionalProperties": true
+        }
+      },
+      "additionalProperties": true
+    },
+    "tables": {
+      "type": "object",
+      "required": [
+        "parties",
+        "increase_events",
+        "subscriptions",
+        "transfer_events",
+        "transfer_lots",
+        "snapshots",
+        "snapshot_holdings",
+        "calculations",
+        "evidence_reviews",
+        "acceptance_checks",
+        "audit_log"
+      ],
+      "properties": {
+        "parties": {
+          "$ref": "#/$defs/parties"
+        },
+        "increase_events": {
+          "$ref": "#/$defs/increase_events"
+        },
+        "subscriptions": {
+          "$ref": "#/$defs/subscriptions"
+        },
+        "transfer_events": {
+          "$ref": "#/$defs/transfer_events"
+        },
+        "transfer_lots": {
+          "$ref": "#/$defs/transfer_lots"
+        },
+        "snapshots": {
+          "$ref": "#/$defs/snapshots"
+        },
+        "snapshot_holdings": {
+          "$ref": "#/$defs/snapshot_holdings"
+        },
+        "calculations": {
+          "$ref": "#/$defs/calculations"
+        },
+        "evidence_reviews": {
+          "$ref": "#/$defs/evidence_reviews"
+        },
+        "acceptance_checks": {
+          "$ref": "#/$defs/acceptance_checks"
+        },
+        "audit_log": {
+          "$ref": "#/$defs/audit_log"
+        }
+      },
+      "additionalProperties": false
+    }
+  },
+  "$defs": {
+    "parties": {
+      "title": "Stage 06 parties",
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "properties": {
+          "party_id": {
+            "type": "string"
+          },
+          "original_name": {
+            "type": "string"
+          },
+          "standardized_name": {
+            "type": "string"
+          },
+          "name_variants": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          },
+          "disclosed_entity_type": {
+            "type": "string"
+          },
+          "first_event_id": {
+            "type": "string"
+          },
+          "last_event_id": {
+            "type": "string"
+          },
+          "standardization_basis": {
+            "type": "string"
+          },
+          "evidence_ids": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          },
+          "manual_judgment": {
+            "type": "string"
+          },
+          "review_status": {
+            "type": "string",
+            "enum": [
+              "待用户复核",
+              "待人工复核",
+              "已验收通过",
+              "需修改"
+            ]
+          }
+        },
+        "required": [
+          "party_id"
+        ]
+      }
+    },
+    "increase_events": {
+      "title": "Stage 06 increase_events",
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "properties": {
+          "increase_id": {
+            "type": "string"
+          },
+          "timeline_id": {
+            "type": "string"
+          },
+          "event_id": {
+            "type": "string"
+          },
+          "parent_event_id": {
+            "type": "string"
+          },
+          "increase_type": {
+            "type": "string",
+            "enum": [
+              "现金增资",
+              "股权激励增资",
+              "资本公积转增",
+              "其他"
+            ]
+          },
+          "original_date_text": {
+            "type": "string"
+          },
+          "standardized_date": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "date_precision": {
+            "type": "string",
+            "enum": [
+              "日",
+              "月",
+              "年",
+              "日期区间",
+              "多个节点",
+              "时点"
+            ]
+          },
+          "company_form_before": {
+            "type": "string"
+          },
+          "company_form_after": {
+            "type": "string"
+          },
+          "capital_before_original": {
+            "type": [
+              "number",
+              "null"
+            ]
+          },
+          "capital_change_original": {
+            "type": [
+              "number",
+              "null"
+            ]
+          },
+          "capital_after_original": {
+            "type": [
+              "number",
+              "null"
+            ]
+          },
+          "original_unit": {
+            "type": "string"
+          },
+          "capital_before_calculated": {
+            "type": [
+              "null",
+              "string"
+            ]
+          },
+          "capital_change_calculated": {
+            "type": [
+              "number",
+              "null"
+            ]
+          },
+          "capital_after_calculated": {
+            "type": [
+              "number",
+              "null"
+            ]
+          },
+          "calculation_ids": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          },
+          "original_value_ids": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          },
+          "evidence_ids": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          },
+          "pdf_pages": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          },
+          "printed_pages": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          },
+          "core_original_excerpt": {
+            "type": "string"
+          },
+          "undisclosed_items": {
+            "type": "string"
+          },
+          "manual_judgment": {
+            "type": "string"
+          },
+          "review_status": {
+            "type": "string",
+            "enum": [
+              "待用户复核",
+              "待人工复核",
+              "已验收通过",
+              "需修改"
+            ]
+          }
+        },
+        "required": [
+          "increase_id"
+        ]
+      }
+    },
+    "subscriptions": {
+      "title": "Stage 06 subscriptions",
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "properties": {
+          "subscription_id": {
+            "type": "string"
+          },
+          "increase_id": {
+            "type": "string"
+          },
+          "event_id": {
+            "type": "string"
+          },
+          "party_id": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "original_party_name": {
+            "type": "string"
+          },
+          "standardized_party_name": {
+            "type": "string"
+          },
+          "party_status_before": {
+            "type": "string"
+          },
+          "entry_or_increase_direction": {
+            "type": "string"
+          },
+          "cash_contribution_original": {
+            "type": [
+              "integer",
+              "null"
+            ]
+          },
+          "cash_unit": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "subscribed_capital_original": {
+            "type": [
+              "number",
+              "null"
+            ]
+          },
+          "capital_unit": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "shares_acquired_original": {
+            "type": [
+              "integer",
+              "null"
+            ]
+          },
+          "shares_unit": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "price_original": {
+            "type": [
+              "number",
+              "null"
+            ]
+          },
+          "price_unit": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "post_money_valuation_original": {
+            "type": [
+              "number",
+              "null"
+            ]
+          },
+          "valuation_unit": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "original_value_ids": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          },
+          "allocated_amount_calculated": {
+            "type": [
+              "integer",
+              "null"
+            ]
+          },
+          "shares_calculated": {
+            "type": [
+              "integer",
+              "null"
+            ]
+          },
+          "holding_after_calculated": {
+            "type": [
+              "integer",
+              "null"
+            ]
+          },
+          "holding_percentage_calculated": {
+            "type": [
+              "integer",
+              "null"
+            ]
+          },
+          "calculation_ids": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          },
+          "evidence_ids": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          },
+          "pdf_pages": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          },
+          "printed_pages": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          },
+          "undisclosed_items": {
+            "type": "string"
+          },
+          "manual_judgment": {
+            "type": "string"
+          },
+          "review_status": {
+            "type": "string",
+            "enum": [
+              "待用户复核",
+              "待人工复核",
+              "已验收通过",
+              "需修改"
+            ]
+          }
+        },
+        "required": [
+          "subscription_id"
+        ]
+      }
+    },
+    "transfer_events": {
+      "title": "Stage 06 transfer_events",
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "properties": {
+          "transfer_event_id": {
+            "type": "string"
+          },
+          "timeline_id": {
+            "type": "string"
+          },
+          "event_id": {
+            "type": "string"
+          },
+          "parent_event_id": {
+            "type": "string"
+          },
+          "standard_event_name": {
+            "type": "string"
+          },
+          "original_date_text": {
+            "type": "string"
+          },
+          "standardized_date": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "date_precision": {
+            "type": "string",
+            "enum": [
+              "日",
+              "月",
+              "年",
+              "日期区间",
+              "多个节点",
+              "时点"
+            ]
+          },
+          "company_form_before": {
+            "type": "string"
+          },
+          "company_form_after": {
+            "type": "string"
+          },
+          "transfer_instrument": {
+            "type": "string"
+          },
+          "total_transferred_original": {
+            "type": [
+              "integer",
+              "string",
+              "null"
+            ]
+          },
+          "total_transferred_unit": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "total_consideration_original": {
+            "type": [
+              "integer",
+              "null"
+            ]
+          },
+          "consideration_unit": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "total_transferred_calculated": {
+            "type": [
+              "number",
+              "null"
+            ]
+          },
+          "calculated_transfer_unit": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "total_consideration_calculated": {
+            "type": [
+              "number",
+              "null"
+            ]
+          },
+          "calculated_consideration_unit": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "registered_capital_unchanged": {
+            "type": "boolean"
+          },
+          "internal_order_status": {
+            "type": "string"
+          },
+          "calculation_ids": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          },
+          "original_value_ids": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          },
+          "evidence_ids": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          },
+          "pdf_pages": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          },
+          "printed_pages": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          },
+          "core_original_excerpt": {
+            "type": "string"
+          },
+          "undisclosed_items": {
+            "type": "string"
+          },
+          "manual_judgment": {
+            "type": "string"
+          },
+          "review_status": {
+            "type": "string",
+            "enum": [
+              "待用户复核",
+              "待人工复核",
+              "已验收通过",
+              "需修改"
+            ]
+          }
+        },
+        "required": [
+          "transfer_event_id"
+        ]
+      }
+    },
+    "transfer_lots": {
+      "title": "Stage 06 transfer_lots",
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "properties": {
+          "transfer_lot_id": {
+            "type": "string"
+          },
+          "transfer_event_id": {
+            "type": "string"
+          },
+          "event_id": {
+            "type": "string"
+          },
+          "transferor_party_id": {
+            "type": "string"
+          },
+          "transferee_party_id": {
+            "type": "string"
+          },
+          "transferor_original_name": {
+            "type": "string"
+          },
+          "transferee_original_name": {
+            "type": "string"
+          },
+          "transferred_amount_original": {
+            "type": [
+              "null",
+              "string"
+            ]
+          },
+          "transferred_percentage_original": {
+            "type": [
+              "number",
+              "null"
+            ]
+          },
+          "transferred_shares_original": {
+            "type": [
+              "integer",
+              "null"
+            ]
+          },
+          "consideration_original": {
+            "type": [
+              "number",
+              "null"
+            ]
+          },
+          "consideration_unit": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "original_value_ids": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          },
+          "unit_price_calculated": {
+            "type": [
+              "number",
+              "null"
+            ]
+          },
+          "unit_price_unit": {
+            "type": "string"
+          },
+          "transferor_holding_after_calculated": {
+            "type": [
+              "null",
+              "string"
+            ]
+          },
+          "transferee_holding_after_calculated": {
+            "type": [
+              "null",
+              "string"
+            ]
+          },
+          "calculation_ids": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          },
+          "transferor_change_direction": {
+            "type": "string"
+          },
+          "transferee_change_direction": {
+            "type": "string"
+          },
+          "evidence_ids": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          },
+          "pdf_pages": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          },
+          "printed_pages": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          },
+          "core_original_excerpt": {
+            "type": "string"
+          },
+          "undisclosed_items": {
+            "type": "string"
+          },
+          "manual_judgment": {
+            "type": "string"
+          },
+          "review_status": {
+            "type": "string",
+            "enum": [
+              "待用户复核",
+              "待人工复核",
+              "已验收通过",
+              "需修改"
+            ]
+          }
+        },
+        "required": [
+          "transfer_lot_id"
+        ]
+      }
+    },
+    "snapshots": {
+      "title": "Stage 06 snapshots",
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "properties": {
+          "snapshot_id": {
+            "type": "string"
+          },
+          "trigger_timeline_id": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "trigger_event_id": {
+            "type": "string"
+          },
+          "snapshot_date_original": {
+            "type": "string"
+          },
+          "snapshot_date_standardized": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "date_precision": {
+            "type": "string",
+            "enum": [
+              "日",
+              "月",
+              "年",
+              "日期区间",
+              "多个节点",
+              "时点"
+            ]
+          },
+          "snapshot_timing": {
+            "type": "string"
+          },
+          "company_form": {
+            "type": "string"
+          },
+          "capital_total_original": {
+            "type": "number"
+          },
+          "capital_unit": {
+            "type": "string"
+          },
+          "capital_total_calculated": {
+            "type": [
+              "integer",
+              "null"
+            ]
+          },
+          "calculation_ids": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          },
+          "snapshot_basis_type": {
+            "type": "string",
+            "enum": [
+              "direct_full_table",
+              "deterministic_rollforward",
+              "partial_directional",
+              "terminal_static"
+            ]
+          },
+          "completeness_status": {
+            "type": "string",
+            "enum": [
+              "complete",
+              "partial",
+              "not_reconstructible",
+              "pending_manual_review"
+            ]
+          },
+          "previous_snapshot_id": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "evidence_ids": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          },
+          "pdf_pages": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          },
+          "printed_pages": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          },
+          "ordering_caveat": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "manual_judgment": {
+            "type": "string"
+          },
+          "review_status": {
+            "type": "string",
+            "enum": [
+              "待用户复核",
+              "待人工复核",
+              "已验收通过",
+              "需修改"
+            ]
+          }
+        },
+        "required": [
+          "snapshot_id"
+        ]
+      }
+    },
+    "snapshot_holdings": {
+      "title": "Stage 06 snapshot_holdings",
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "properties": {
+          "snapshot_holding_id": {
+            "type": "string"
+          },
+          "snapshot_id": {
+            "type": "string"
+          },
+          "party_id": {
+            "type": "string"
+          },
+          "original_party_name": {
+            "type": "string"
+          },
+          "standardized_party_name": {
+            "type": "string"
+          },
+          "holding_amount_original": {
+            "type": [
+              "integer",
+              "null"
+            ]
+          },
+          "holding_shares_original": {
+            "type": [
+              "integer",
+              "null"
+            ]
+          },
+          "holding_percentage_original": {
+            "type": [
+              "number",
+              "null"
+            ]
+          },
+          "original_unit": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "original_value_ids": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          },
+          "holding_before_calculated": {
+            "type": [
+              "number",
+              "null"
+            ]
+          },
+          "increase_calculated": {
+            "type": [
+              "integer",
+              "null"
+            ]
+          },
+          "transfer_in_calculated": {
+            "type": [
+              "number",
+              "null"
+            ]
+          },
+          "transfer_out_calculated": {
+            "type": [
+              "number",
+              "null"
+            ]
+          },
+          "holding_after_calculated": {
+            "type": [
+              "number",
+              "null"
+            ]
+          },
+          "snapshot_total_calculated": {
+            "type": "number"
+          },
+          "holding_percentage_calculated": {
+            "type": [
+              "number",
+              "null"
+            ]
+          },
+          "calculation_ids": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          },
+          "entry_exit_status": {
+            "type": "string"
+          },
+          "evidence_ids": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          },
+          "pdf_pages": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          },
+          "printed_pages": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          },
+          "value_source_type": {
+            "type": "string",
+            "enum": [
+              "原文直接披露",
+              "确定性滚动",
+              "部分确定性滚动",
+              "原文方向性披露",
+              "原文变更后表＋确定性滚动",
+              "C8发行前静态表",
+              "阶段六人工判断/计算",
+              "部分方向性披露",
+              "确定性滚动＋原文表核对",
+              "原文转让后表＋确定性滚动",
+              "原文增资后表＋确定性滚动"
+            ]
+          },
+          "manual_judgment": {
+            "type": "string"
+          },
+          "review_status": {
+            "type": "string",
+            "enum": [
+              "待用户复核",
+              "待人工复核",
+              "已验收通过",
+              "需修改"
+            ]
+          }
+        },
+        "required": [
+          "snapshot_holding_id"
+        ]
+      }
+    },
+    "calculations": {
+      "title": "Stage 06 calculations",
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "properties": {
+          "calculation_id": {
+            "type": "string"
+          },
+          "category": {
+            "type": "string"
+          },
+          "related_event_id": {
+            "type": "string"
+          },
+          "related_snapshot_id": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          },
+          "description": {
+            "type": "string"
+          },
+          "input_values": {
+            "type": "string"
+          },
+          "formula": {
+            "type": "string"
+          },
+          "unrounded_result": {
+            "type": [
+              "number",
+              "string"
+            ]
+          },
+          "display_result": {
+            "type": "string"
+          },
+          "unit": {
+            "type": "string"
+          },
+          "rounding_rule": {
+            "type": "string"
+          },
+          "source_ids": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          },
+          "status": {
+            "type": "string"
+          },
+          "review_note": {
+            "type": "string"
+          }
+        },
+        "required": [
+          "calculation_id"
+        ]
+      }
+    },
+    "evidence_reviews": {
+      "title": "Stage 06 evidence_reviews",
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "properties": {
+          "record_id": {
+            "type": "string"
+          },
+          "record_type": {
+            "type": "string"
+          },
+          "event_or_snapshot_id": {
+            "type": "string"
+          },
+          "evidence_ids": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          },
+          "pdf_pages": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          },
+          "printed_pages": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          },
+          "original_evidence_or_issue": {
+            "type": "string"
+          },
+          "supported_fields_or_review_point": {
+            "type": "string"
+          },
+          "source_level": {
+            "type": "string"
+          },
+          "manual_judgment": {
+            "type": "string"
+          },
+          "review_status": {
+            "type": "string",
+            "enum": [
+              "待用户复核",
+              "待人工复核",
+              "已验收通过",
+              "需修改"
+            ]
+          },
+          "review_note": {
+            "type": [
+              "string",
+              "null"
+            ]
+          }
+        },
+        "required": [
+          "record_id"
+        ]
+      }
+    },
+    "acceptance_checks": {
+      "title": "Stage 06 acceptance_checks",
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "properties": {
+          "check_id": {
+            "type": "string"
+          },
+          "check_category": {
+            "type": "string"
+          },
+          "check_description": {
+            "type": "string"
+          },
+          "expected_value": {
+            "type": [
+              "number",
+              "string"
+            ]
+          },
+          "actual_value": {
+            "type": [
+              "number",
+              "string"
+            ]
+          },
+          "check_result": {
+            "type": "string",
+            "enum": [
+              "通过",
+              "待复核",
+              "需修改",
+              "不适用"
+            ]
+          },
+          "related_records": {
+            "type": "string"
+          },
+          "review_status": {
+            "type": "string",
+            "enum": [
+              "待用户复核",
+              "待人工复核",
+              "已验收通过",
+              "需修改"
+            ]
+          },
+          "review_note": {
+            "type": "string"
+          }
+        },
+        "required": [
+          "check_id"
+        ]
+      }
+    },
+    "audit_log": {
+      "title": "Stage 06 audit_log",
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "properties": {
+          "issue_id": {
+            "type": "string"
+          },
+          "级别": {
+            "type": "string"
+          },
+          "审查范围": {
+            "type": "string"
+          },
+          "审查结论": {
+            "type": "string"
+          },
+          "修订或处理": {
+            "type": "string"
+          },
+          "证据/计算依据": {
+            "type": "string"
+          },
+          "当前状态": {
+            "type": "string"
+          },
+          "下一步": {
+            "type": "string"
+          }
+        },
+        "required": [
+          "issue_id"
+        ]
+      }
+    }
+  },
+  "additionalProperties": false
+}
