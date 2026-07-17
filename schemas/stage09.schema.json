@@ -1,0 +1,57 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "stage09.schema.json",
+  "title": "Stage 09 final automation bundle",
+  "type": "object",
+  "required": [
+    "metadata", "input_artifacts", "source_records", "source_crosswalks",
+    "canonical_events", "canonical_entities", "canonical_evidence",
+    "normalized_transactions", "normalized_snapshots", "numeric_validations",
+    "pevc_results", "automation_results", "review_items", "review_actions",
+    "exceptions", "acceptance_checks", "run_manifest"
+  ],
+  "properties": {
+    "metadata": {
+      "type": "object",
+      "required": ["project", "stage", "substage", "status", "program_version", "rule_set_version", "run_id"],
+      "properties": {
+        "stage": {"const": 9},
+        "substage": {"const": "9E"},
+        "status": {"const": "FINAL_APPROVED"}
+      }
+    },
+    "input_artifacts": {"type": "array", "minItems": 8},
+    "source_records": {"type": "array", "minItems": 1648},
+    "source_crosswalks": {"type": "array", "minItems": 1648},
+    "canonical_events": {"type": "array", "minItems": 26},
+    "canonical_entities": {"type": "array", "minItems": 45},
+    "canonical_evidence": {"type": "array", "minItems": 126},
+    "normalized_transactions": {"type": "array", "minItems": 63},
+    "normalized_snapshots": {"type": "array", "minItems": 216},
+    "numeric_validations": {"type": "array", "minItems": 55},
+    "pevc_results": {
+      "type": "object",
+      "required": ["investment_records", "path_edges", "final_identification"]
+    },
+    "automation_results": {
+      "type": "object",
+      "required": ["numeric_evaluations", "transaction_evaluations", "pevc_evaluations", "rule_results", "business_output_hash"]
+    },
+    "review_items": {"type": "array", "minItems": 17, "maxItems": 17},
+    "review_actions": {"type": "array", "minItems": 17, "maxItems": 17},
+    "exceptions": {"type": "array"},
+    "acceptance_checks": {
+      "type": "array",
+      "minItems": 16,
+      "items": {
+        "type": "object",
+        "required": ["check_id", "check_item", "result", "observed"],
+        "properties": {"result": {"const": "PASS"}}
+      }
+    },
+    "run_manifest": {
+      "type": "object",
+      "required": ["run_id", "program_version", "rule_set_version", "upstream_hashes", "final_workbook_sha256", "counts", "final_business_hash"]
+    }
+  }
+}
