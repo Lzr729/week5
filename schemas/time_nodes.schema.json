@@ -1,0 +1,52 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Stage05 Time Nodes",
+  "type": "array",
+  "minItems": 43,
+  "maxItems": 43,
+  "items": {
+    "type": "object",
+    "required": [
+      "time_node_id",
+      "event_id",
+      "node_type",
+      "original_date_text",
+      "date_precision",
+      "evidence_id"
+    ],
+    "properties": {
+      "time_node_id": {
+        "type": "string",
+        "pattern": "^TN-[0-9]{3}$"
+      },
+      "normalized_date": {
+        "type": [
+          "string",
+          "null"
+        ],
+        "format": "date"
+      },
+      "period_start": {
+        "type": [
+          "string",
+          "null"
+        ],
+        "format": "date"
+      },
+      "period_end": {
+        "type": [
+          "string",
+          "null"
+        ],
+        "format": "date"
+      },
+      "is_primary_display_node": {
+        "type": [
+          "boolean",
+          "string"
+        ]
+      }
+    },
+    "additionalProperties": true
+  }
+}

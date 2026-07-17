@@ -1,0 +1,23 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Stage05 Review Items",
+  "type": "array",
+  "minItems": 3,
+  "maxItems": 3,
+  "items": {
+    "type": "object",
+    "required": [
+      "review_item_id",
+      "event_id",
+      "review_type",
+      "status"
+    ],
+    "properties": {
+      "review_item_id": {
+        "type": "string",
+        "pattern": "^RV-[0-9]{3}$"
+      }
+    },
+    "additionalProperties": true
+  }
+}

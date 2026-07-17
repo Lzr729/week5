@@ -1,0 +1,75 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Stage05 Equity Timeline",
+  "type": "array",
+  "minItems": 17,
+  "maxItems": 17,
+  "items": {
+    "type": "object",
+    "required": [
+      "timeline_id",
+      "display_sequence",
+      "event_id",
+      "standard_event_name",
+      "time_node_ids",
+      "evidence_ids",
+      "pdf_pages",
+      "printed_pages",
+      "review_status"
+    ],
+    "properties": {
+      "timeline_id": {
+        "type": "string",
+        "pattern": "^TL-[0-9]{3}$"
+      },
+      "display_sequence": {
+        "type": "integer",
+        "minimum": 1,
+        "maximum": 17
+      },
+      "event_id": {
+        "type": "string",
+        "pattern": "^CE-[0-9]{3}(-[0-9]{2})?$"
+      },
+      "time_node_ids": {
+        "type": "array",
+        "items": {
+          "type": "string",
+          "pattern": "^TN-[0-9]{3}$"
+        }
+      },
+      "calculation_ids": {
+        "type": "array",
+        "items": {
+          "type": "string",
+          "pattern": "^CAL-[0-9]{3}$"
+        }
+      },
+      "evidence_ids": {
+        "type": "array",
+        "minItems": 1,
+        "items": {
+          "type": "string"
+        }
+      },
+      "pdf_pages": {
+        "type": "array",
+        "minItems": 1,
+        "items": {
+          "type": "string"
+        }
+      },
+      "printed_pages": {
+        "type": "array",
+        "minItems": 1,
+        "items": {
+          "type": "string"
+        }
+      },
+      "review_status": {
+        "const": "已验收通过"
+      }
+    },
+    "additionalProperties": true
+  }
+}

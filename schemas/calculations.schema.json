@@ -1,0 +1,35 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Stage05 Calculations",
+  "type": "array",
+  "minItems": 16,
+  "maxItems": 16,
+  "items": {
+    "type": "object",
+    "required": [
+      "calculation_id",
+      "event_id",
+      "calculation_purpose",
+      "formula_note",
+      "calculated_result",
+      "result_unit",
+      "calculation_status"
+    ],
+    "properties": {
+      "calculation_id": {
+        "type": "string",
+        "pattern": "^CAL-[0-9]{3}$"
+      },
+      "calculated_result": {
+        "type": "number"
+      },
+      "variance": {
+        "type": [
+          "number",
+          "null"
+        ]
+      }
+    },
+    "additionalProperties": true
+  }
+}

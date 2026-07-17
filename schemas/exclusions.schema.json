@@ -1,0 +1,25 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Stage05 Exclusions",
+  "type": "array",
+  "minItems": 9,
+  "maxItems": 9,
+  "items": {
+    "type": "object",
+    "required": [
+      "record_id",
+      "event_id",
+      "record_type",
+      "decision",
+      "reason",
+      "review_status"
+    ],
+    "properties": {
+      "record_id": {
+        "type": "string",
+        "pattern": "^EX-[0-9]{3}$"
+      }
+    },
+    "additionalProperties": true
+  }
+}

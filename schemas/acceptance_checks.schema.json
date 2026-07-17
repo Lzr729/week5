@@ -1,0 +1,27 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Stage05 Acceptance Checks",
+  "type": "array",
+  "minItems": 17,
+  "maxItems": 17,
+  "items": {
+    "type": "object",
+    "required": [
+      "timeline_id",
+      "event_id",
+      "overall_check_status",
+      "reviewer",
+      "review_date"
+    ],
+    "properties": {
+      "overall_check_status": {
+        "const": "已验收通过"
+      },
+      "review_date": {
+        "type": "string",
+        "format": "date"
+      }
+    },
+    "additionalProperties": true
+  }
+}
