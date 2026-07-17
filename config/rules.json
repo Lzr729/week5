@@ -1,0 +1,977 @@
+{
+  "metadata": {
+    "project": "301563云汉芯城招股说明书工程化学习",
+    "stage": 9,
+    "version": "9E.1.0",
+    "note": "分层保留9B基础规则、9C业务规则和9D人工复核规则；不静默改写已验收规则。"
+  },
+  "stage9b": {
+    "metadata": {
+      "stage": 9,
+      "substage": "9B",
+      "rule_set_version": "9B.2.0",
+      "scope": "PDF及阶段一至八全输入统一中间模型与基础完整性规则"
+    },
+    "rules": [
+      {
+        "rule_id": "S09-B001",
+        "rule_version": "1.0",
+        "rule_name": "统一事件ID唯一",
+        "rule_group": "STRUCTURE",
+        "description": "统一事件ID唯一",
+        "severity": "HIGH",
+        "blocking": true,
+        "review_required": false,
+        "evaluator": "stage09.validation.validate_model",
+        "input_objects": [
+          "canonical_events"
+        ],
+        "condition": "由evaluator执行确定性检查；不调用网络、不使用模糊匹配、不补充未披露事实。",
+        "expected_result": "PASS"
+      },
+      {
+        "rule_id": "S09-B002",
+        "rule_version": "1.0",
+        "rule_name": "CE事件引用完整",
+        "rule_group": "REFERENCE",
+        "description": "CE事件引用完整",
+        "severity": "HIGH",
+        "blocking": true,
+        "review_required": false,
+        "evaluator": "stage09.validation.validate_model",
+        "input_objects": [
+          "source_crosswalks",
+          "canonical_events"
+        ],
+        "condition": "由evaluator执行确定性检查；不调用网络、不使用模糊匹配、不补充未披露事实。",
+        "expected_result": "PASS"
+      },
+      {
+        "rule_id": "S09-B003",
+        "rule_version": "1.0",
+        "rule_name": "统一主体ID唯一",
+        "rule_group": "STRUCTURE",
+        "description": "统一主体ID唯一",
+        "severity": "HIGH",
+        "blocking": true,
+        "review_required": false,
+        "evaluator": "stage09.validation.validate_model",
+        "input_objects": [
+          "canonical_entities"
+        ],
+        "condition": "由evaluator执行确定性检查；不调用网络、不使用模糊匹配、不补充未披露事实。",
+        "expected_result": "PASS"
+      },
+      {
+        "rule_id": "S09-B004",
+        "rule_version": "1.0",
+        "rule_name": "阶段六主体明确映射完整",
+        "rule_group": "ENTITY",
+        "description": "阶段六主体明确映射完整",
+        "severity": "HIGH",
+        "blocking": true,
+        "review_required": false,
+        "evaluator": "stage09.validation.validate_model",
+        "input_objects": [
+          "stage06.parties",
+          "canonical_entities"
+        ],
+        "condition": "由evaluator执行确定性检查；不调用网络、不使用模糊匹配、不补充未披露事实。",
+        "expected_result": "PASS"
+      },
+      {
+        "rule_id": "S09-B005",
+        "rule_version": "1.0",
+        "rule_name": "禁止模糊名称合并",
+        "rule_group": "FORBIDDEN_INFERENCE",
+        "description": "禁止模糊名称合并",
+        "severity": "CRITICAL",
+        "blocking": true,
+        "review_required": false,
+        "evaluator": "stage09.validation.validate_model",
+        "input_objects": [
+          "canonical_entities"
+        ],
+        "condition": "由evaluator执行确定性检查；不调用网络、不使用模糊匹配、不补充未披露事实。",
+        "expected_result": "PASS"
+      },
+      {
+        "rule_id": "S09-B006",
+        "rule_version": "1.0",
+        "rule_name": "统一证据ID唯一",
+        "rule_group": "STRUCTURE",
+        "description": "统一证据ID唯一",
+        "severity": "HIGH",
+        "blocking": true,
+        "review_required": false,
+        "evaluator": "stage09.validation.validate_model",
+        "input_objects": [
+          "canonical_evidence"
+        ],
+        "condition": "由evaluator执行确定性检查；不调用网络、不使用模糊匹配、不补充未披露事实。",
+        "expected_result": "PASS"
+      },
+      {
+        "rule_id": "S09-B007",
+        "rule_version": "1.0",
+        "rule_name": "支持引用按类型解析",
+        "rule_group": "REFERENCE",
+        "description": "支持引用按类型解析",
+        "severity": "HIGH",
+        "blocking": true,
+        "review_required": false,
+        "evaluator": "stage09.validation.validate_model",
+        "input_objects": [
+          "numeric_source_values",
+          "numeric_validations",
+          "pevc_results"
+        ],
+        "condition": "由evaluator执行确定性检查；不调用网络、不使用模糊匹配、不补充未披露事实。",
+        "expected_result": "PASS"
+      },
+      {
+        "rule_id": "S09-B008",
+        "rule_version": "1.0",
+        "rule_name": "交易主体引用完整",
+        "rule_group": "TRANSACTION",
+        "description": "交易主体引用完整",
+        "severity": "HIGH",
+        "blocking": true,
+        "review_required": false,
+        "evaluator": "stage09.validation.validate_model",
+        "input_objects": [
+          "normalized_transactions",
+          "canonical_entities"
+        ],
+        "condition": "由evaluator执行确定性检查；不调用网络、不使用模糊匹配、不补充未披露事实。",
+        "expected_result": "PASS"
+      },
+      {
+        "rule_id": "S09-B009",
+        "rule_version": "1.0",
+        "rule_name": "统一交易ID唯一",
+        "rule_group": "STRUCTURE",
+        "description": "统一交易ID唯一",
+        "severity": "HIGH",
+        "blocking": true,
+        "review_required": false,
+        "evaluator": "stage09.validation.validate_model",
+        "input_objects": [
+          "normalized_transactions"
+        ],
+        "condition": "由evaluator执行确定性检查；不调用网络、不使用模糊匹配、不补充未披露事实。",
+        "expected_result": "PASS"
+      },
+      {
+        "rule_id": "S09-B010",
+        "rule_version": "1.0",
+        "rule_name": "快照主体引用完整",
+        "rule_group": "SNAPSHOT",
+        "description": "快照主体引用完整",
+        "severity": "HIGH",
+        "blocking": true,
+        "review_required": false,
+        "evaluator": "stage09.validation.validate_model",
+        "input_objects": [
+          "normalized_snapshots",
+          "canonical_entities"
+        ],
+        "condition": "由evaluator执行确定性检查；不调用网络、不使用模糊匹配、不补充未披露事实。",
+        "expected_result": "PASS"
+      },
+      {
+        "rule_id": "S09-B011",
+        "rule_version": "1.0",
+        "rule_name": "数值来源ID唯一",
+        "rule_group": "NUMERIC",
+        "description": "数值来源ID唯一",
+        "severity": "HIGH",
+        "blocking": true,
+        "review_required": false,
+        "evaluator": "stage09.validation.validate_model",
+        "input_objects": [
+          "numeric_source_values"
+        ],
+        "condition": "由evaluator执行确定性检查；不调用网络、不使用模糊匹配、不补充未披露事实。",
+        "expected_result": "PASS"
+      },
+      {
+        "rule_id": "S09-B012",
+        "rule_version": "1.0",
+        "rule_name": "数值输入多态引用解析",
+        "rule_group": "NUMERIC",
+        "description": "数值输入多态引用解析",
+        "severity": "HIGH",
+        "blocking": true,
+        "review_required": false,
+        "evaluator": "stage09.validation.validate_model",
+        "input_objects": [
+          "numeric_validations",
+          "source_records"
+        ],
+        "condition": "由evaluator执行确定性检查；不调用网络、不使用模糊匹配、不补充未披露事实。",
+        "expected_result": "PASS"
+      },
+      {
+        "rule_id": "S09-B013",
+        "rule_version": "1.0",
+        "rule_name": "校验事项确定性合并",
+        "rule_group": "NUMERIC",
+        "description": "校验事项确定性合并",
+        "severity": "HIGH",
+        "blocking": true,
+        "review_required": false,
+        "evaluator": "stage09.validation.validate_model",
+        "input_objects": [
+          "numeric_validations"
+        ],
+        "condition": "由evaluator执行确定性检查；不调用网络、不使用模糊匹配、不补充未披露事实。",
+        "expected_result": "PASS"
+      },
+      {
+        "rule_id": "S09-B014",
+        "rule_version": "1.0",
+        "rule_name": "PEVC主体引用完整",
+        "rule_group": "PEVC",
+        "description": "PEVC主体引用完整",
+        "severity": "HIGH",
+        "blocking": true,
+        "review_required": false,
+        "evaluator": "stage09.validation.validate_model",
+        "input_objects": [
+          "pevc_results",
+          "canonical_entities"
+        ],
+        "condition": "由evaluator执行确定性检查；不调用网络、不使用模糊匹配、不补充未披露事实。",
+        "expected_result": "PASS"
+      },
+      {
+        "rule_id": "S09-B015",
+        "rule_version": "1.0",
+        "rule_name": "来源记录交叉映射全覆盖",
+        "rule_group": "PROVENANCE",
+        "description": "来源记录交叉映射全覆盖",
+        "severity": "CRITICAL",
+        "blocking": true,
+        "review_required": false,
+        "evaluator": "stage09.validation.validate_model",
+        "input_objects": [
+          "source_records",
+          "source_crosswalks"
+        ],
+        "condition": "由evaluator执行确定性检查；不调用网络、不使用模糊匹配、不补充未披露事实。",
+        "expected_result": "PASS"
+      },
+      {
+        "rule_id": "S09-B016",
+        "rule_version": "1.0",
+        "rule_name": "阶段一至八上游字段和值无损保留",
+        "rule_group": "PROVENANCE",
+        "description": "阶段一至八上游字段和值无损保留",
+        "severity": "CRITICAL",
+        "blocking": true,
+        "review_required": false,
+        "evaluator": "stage09.validation.validate_model",
+        "input_objects": [
+          "source_records",
+          "stage01-stage08"
+        ],
+        "condition": "由evaluator执行确定性检查；不调用网络、不使用模糊匹配、不补充未披露事实。",
+        "expected_result": "PASS"
+      },
+      {
+        "rule_id": "S09-B017",
+        "rule_version": "1.0",
+        "rule_name": "完整输入可用性",
+        "rule_group": "INPUT",
+        "description": "完整输入可用性",
+        "severity": "CRITICAL",
+        "blocking": true,
+        "review_required": false,
+        "evaluator": "stage09.validation.validate_model",
+        "input_objects": [
+          "input_artifacts"
+        ],
+        "condition": "由evaluator执行确定性检查；不调用网络、不使用模糊匹配、不补充未披露事实。",
+        "expected_result": "PASS"
+      },
+      {
+        "rule_id": "S09-B018",
+        "rule_version": "1.0",
+        "rule_name": "证据原文摘录完整",
+        "rule_group": "EVIDENCE",
+        "description": "证据原文摘录完整",
+        "severity": "HIGH",
+        "blocking": true,
+        "review_required": false,
+        "evaluator": "stage09.validation.validate_model",
+        "input_objects": [
+          "canonical_evidence"
+        ],
+        "condition": "由evaluator执行确定性检查；不调用网络、不使用模糊匹配、不补充未披露事实。",
+        "expected_result": "PASS"
+      },
+      {
+        "rule_id": "S09-B019",
+        "rule_version": "1.0",
+        "rule_name": "上游成果包完整性",
+        "rule_group": "INPUT",
+        "description": "上游成果包完整性",
+        "severity": "CRITICAL",
+        "blocking": true,
+        "review_required": false,
+        "evaluator": "stage09.validation.validate_model",
+        "input_objects": [
+          "input_artifacts"
+        ],
+        "condition": "由evaluator执行确定性检查；不调用网络、不使用模糊匹配、不补充未披露事实。",
+        "expected_result": "PASS"
+      },
+      {
+        "rule_id": "S09-B020",
+        "rule_version": "1.0",
+        "rule_name": "PDF哈希冻结及页数一致",
+        "rule_group": "INPUT",
+        "description": "PDF哈希冻结及页数一致",
+        "severity": "CRITICAL",
+        "blocking": true,
+        "review_required": false,
+        "evaluator": "stage09.validation.validate_model",
+        "input_objects": [
+          "input_artifacts",
+          "document_context.pdf_metadata"
+        ],
+        "condition": "由evaluator执行确定性检查；不调用网络、不使用模糊匹配、不补充未披露事实。",
+        "expected_result": "PASS"
+      },
+      {
+        "rule_id": "S09-B021",
+        "rule_version": "1.0",
+        "rule_name": "阶段四最终验收权威状态",
+        "rule_group": "REVIEW",
+        "description": "阶段四最终验收权威状态",
+        "severity": "MEDIUM",
+        "blocking": false,
+        "review_required": true,
+        "evaluator": "stage09.validation.validate_model",
+        "input_objects": [
+          "event_annotations.event_master",
+          "event_annotations.review_checks",
+          "event_annotations.participants"
+        ],
+        "condition": "由evaluator执行确定性检查；不调用网络、不使用模糊匹配、不补充未披露事实。",
+        "expected_result": "PASS"
+      },
+      {
+        "rule_id": "S09-B022",
+        "rule_version": "1.0",
+        "rule_name": "阶段一至八验收状态完整",
+        "rule_group": "INPUT",
+        "description": "阶段一至八验收状态完整",
+        "severity": "HIGH",
+        "blocking": true,
+        "review_required": false,
+        "evaluator": "stage09.validation.validate_model",
+        "input_objects": [
+          "stage01-stage08.metadata"
+        ],
+        "condition": "由evaluator执行确定性检查；不调用网络、不使用模糊匹配、不补充未披露事实。",
+        "expected_result": "PASS"
+      },
+      {
+        "rule_id": "S09-B023",
+        "rule_version": "1.0",
+        "rule_name": "双页码映射一致",
+        "rule_group": "EVIDENCE",
+        "description": "双页码映射一致",
+        "severity": "HIGH",
+        "blocking": true,
+        "review_required": false,
+        "evaluator": "stage09.validation.validate_model",
+        "input_objects": [
+          "document_context.sections"
+        ],
+        "condition": "由evaluator执行确定性检查；不调用网络、不使用模糊匹配、不补充未披露事实。",
+        "expected_result": "PASS"
+      }
+    ]
+  },
+  "stage9c": {
+    "metadata": {
+      "stage": 9,
+      "substage": "9C",
+      "rule_set_version": "9C.1.0",
+      "rule_count": 35,
+      "automation_boundary": "确定性复算和规则复现；不推断未披露信息"
+    },
+    "rules": [
+      {
+        "rule_id": "S09-N001",
+        "rule_version": "1.0",
+        "rule_group": "NUMERIC",
+        "rule_name": "公式类型受控",
+        "description": "仅允许ratio_pct、product、signed_sum、unit_price、share_to_capital。",
+        "input_objects": [],
+        "condition": "implemented_in_python",
+        "expected_result": "PASS",
+        "severity": "HIGH",
+        "blocking": true,
+        "review_required": true,
+        "evaluator": "stage09 deterministic rule engine"
+      },
+      {
+        "rule_id": "S09-N002",
+        "rule_version": "1.0",
+        "rule_group": "NUMERIC",
+        "rule_name": "数值输入完整",
+        "description": "参与计算的标准化输入不得为空。",
+        "input_objects": [],
+        "condition": "implemented_in_python",
+        "expected_result": "PASS",
+        "severity": "HIGH",
+        "blocking": true,
+        "review_required": true,
+        "evaluator": "stage09 deterministic rule engine"
+      },
+      {
+        "rule_id": "S09-N003",
+        "rule_version": "1.0",
+        "rule_group": "NUMERIC",
+        "rule_name": "确定性数值复算",
+        "description": "按公式重新计算并与阶段七计算值核对。",
+        "input_objects": [],
+        "condition": "implemented_in_python",
+        "expected_result": "PASS",
+        "severity": "HIGH",
+        "blocking": true,
+        "review_required": true,
+        "evaluator": "stage09 deterministic rule engine"
+      },
+      {
+        "rule_id": "S09-N004",
+        "rule_version": "1.0",
+        "rule_group": "NUMERIC",
+        "rule_name": "差异值复算",
+        "description": "差异值必须由计算值减比较值产生。",
+        "input_objects": [],
+        "condition": "implemented_in_python",
+        "expected_result": "PASS",
+        "severity": "HIGH",
+        "blocking": true,
+        "review_required": true,
+        "evaluator": "stage09 deterministic rule engine"
+      },
+      {
+        "rule_id": "S09-N005",
+        "rule_version": "1.0",
+        "rule_group": "NUMERIC",
+        "rule_name": "公式单位兼容",
+        "description": "输入单位与输出单位必须符合公式定义。",
+        "input_objects": [],
+        "condition": "implemented_in_python",
+        "expected_result": "PASS",
+        "severity": "HIGH",
+        "blocking": true,
+        "review_required": true,
+        "evaluator": "stage09 deterministic rule engine"
+      },
+      {
+        "rule_id": "S09-N006",
+        "rule_version": "1.0",
+        "rule_group": "NUMERIC",
+        "rule_name": "舍入分类一致",
+        "description": "差异分类须符合展示精度或明确约数。",
+        "input_objects": [],
+        "condition": "implemented_in_python",
+        "expected_result": "PASS",
+        "severity": "HIGH",
+        "blocking": true,
+        "review_required": true,
+        "evaluator": "stage09 deterministic rule engine"
+      },
+      {
+        "rule_id": "S09-N007",
+        "rule_version": "1.0",
+        "rule_group": "NUMERIC",
+        "rule_name": "派生依赖完整",
+        "description": "VAL依赖和多态引用必须存在。",
+        "input_objects": [],
+        "condition": "implemented_in_python",
+        "expected_result": "PASS",
+        "severity": "HIGH",
+        "blocking": true,
+        "review_required": true,
+        "evaluator": "stage09 deterministic rule engine"
+      },
+      {
+        "rule_id": "S09-N008",
+        "rule_version": "1.0",
+        "rule_group": "NUMERIC",
+        "rule_name": "数值分层保存",
+        "description": "原文比较值、计算值和差异值不得混写。",
+        "input_objects": [],
+        "condition": "implemented_in_python",
+        "expected_result": "PASS",
+        "severity": "HIGH",
+        "blocking": true,
+        "review_required": true,
+        "evaluator": "stage09 deterministic rule engine"
+      },
+      {
+        "rule_id": "S09-N009",
+        "rule_version": "1.0",
+        "rule_group": "NUMERIC",
+        "rule_name": "CE-005差异保留",
+        "description": "0.00574万元披露差异必须原样保留。",
+        "input_objects": [],
+        "condition": "implemented_in_python",
+        "expected_result": "PASS",
+        "severity": "HIGH",
+        "blocking": true,
+        "review_required": true,
+        "evaluator": "stage09 deterministic rule engine"
+      },
+      {
+        "rule_id": "S09-N010",
+        "rule_version": "1.0",
+        "rule_group": "NUMERIC",
+        "rule_name": "CE-013股数回归",
+        "description": "十笔转让股数合计必须为1,659,535股。",
+        "input_objects": [],
+        "condition": "implemented_in_python",
+        "expected_result": "PASS",
+        "severity": "HIGH",
+        "blocking": true,
+        "review_required": true,
+        "evaluator": "stage09 deterministic rule engine"
+      },
+      {
+        "rule_id": "S09-N011",
+        "rule_version": "1.0",
+        "rule_group": "NUMERIC",
+        "rule_name": "CE-013价款回归",
+        "description": "十笔转让价款合计必须为8,563.19万元。",
+        "input_objects": [],
+        "condition": "implemented_in_python",
+        "expected_result": "PASS",
+        "severity": "HIGH",
+        "blocking": true,
+        "review_required": true,
+        "evaluator": "stage09 deterministic rule engine"
+      },
+      {
+        "rule_id": "S09-T001",
+        "rule_version": "1.0",
+        "rule_group": "TRANSACTION",
+        "rule_name": "事件与原子腿分离",
+        "description": "增资事件、认购腿、转让事件、转让明细必须分层。",
+        "input_objects": [],
+        "condition": "implemented_in_python",
+        "expected_result": "PASS",
+        "severity": "HIGH",
+        "blocking": true,
+        "review_required": true,
+        "evaluator": "stage09 deterministic rule engine"
+      },
+      {
+        "rule_id": "S09-T002",
+        "rule_version": "1.0",
+        "rule_group": "TRANSACTION",
+        "rule_name": "父事件引用完整",
+        "description": "认购腿和转让明细必须引用存在的父事件。",
+        "input_objects": [],
+        "condition": "implemented_in_python",
+        "expected_result": "PASS",
+        "severity": "HIGH",
+        "blocking": true,
+        "review_required": true,
+        "evaluator": "stage09 deterministic rule engine"
+      },
+      {
+        "rule_id": "S09-T003",
+        "rule_version": "1.0",
+        "rule_group": "TRANSACTION",
+        "rule_name": "转让明细汇总",
+        "description": "逐笔股数、比例和价款须与事件合计勾稽。",
+        "input_objects": [],
+        "condition": "implemented_in_python",
+        "expected_result": "PASS",
+        "severity": "HIGH",
+        "blocking": true,
+        "review_required": true,
+        "evaluator": "stage09 deterministic rule engine"
+      },
+      {
+        "rule_id": "S09-T004",
+        "rule_version": "1.0",
+        "rule_group": "TRANSACTION",
+        "rule_name": "单位价格复算",
+        "description": "价款×10,000÷股数须等于保存的元/股计算值。",
+        "input_objects": [],
+        "condition": "implemented_in_python",
+        "expected_result": "PASS",
+        "severity": "HIGH",
+        "blocking": true,
+        "review_required": true,
+        "evaluator": "stage09 deterministic rule engine"
+      },
+      {
+        "rule_id": "S09-T005",
+        "rule_version": "1.0",
+        "rule_group": "TRANSACTION",
+        "rule_name": "转让不改变注册资本",
+        "description": "股权或股份转让不得改变注册资本。",
+        "input_objects": [],
+        "condition": "implemented_in_python",
+        "expected_result": "PASS",
+        "severity": "HIGH",
+        "blocking": true,
+        "review_required": true,
+        "evaluator": "stage09 deterministic rule engine"
+      },
+      {
+        "rule_id": "S09-T006",
+        "rule_version": "1.0",
+        "rule_group": "TRANSACTION",
+        "rule_name": "增资资本勾稽",
+        "description": "增资前资本+新增资本=增资后资本，CE-005差异例外保留。",
+        "input_objects": [],
+        "condition": "implemented_in_python",
+        "expected_result": "PASS",
+        "severity": "HIGH",
+        "blocking": true,
+        "review_required": true,
+        "evaluator": "stage09 deterministic rule engine"
+      },
+      {
+        "rule_id": "S09-T007",
+        "rule_version": "1.0",
+        "rule_group": "TRANSACTION",
+        "rule_name": "禁止平均分配",
+        "description": "各方金额未披露时不得平均分配共同增资额。",
+        "input_objects": [],
+        "condition": "implemented_in_python",
+        "expected_result": "PASS",
+        "severity": "HIGH",
+        "blocking": true,
+        "review_required": true,
+        "evaluator": "stage09 deterministic rule engine"
+      },
+      {
+        "rule_id": "S09-T008",
+        "rule_version": "1.0",
+        "rule_group": "TRANSACTION",
+        "rule_name": "资本股份换算",
+        "description": "1万元注册资本对应10,000股。",
+        "input_objects": [],
+        "condition": "implemented_in_python",
+        "expected_result": "PASS",
+        "severity": "HIGH",
+        "blocking": true,
+        "review_required": true,
+        "evaluator": "stage09 deterministic rule engine"
+      },
+      {
+        "rule_id": "S09-T009",
+        "rule_version": "1.0",
+        "rule_group": "TRANSACTION",
+        "rule_name": "完整快照持股合计",
+        "description": "完整快照逐主体持股之和等于总资本或总股本。",
+        "input_objects": [],
+        "condition": "implemented_in_python",
+        "expected_result": "PASS",
+        "severity": "HIGH",
+        "blocking": true,
+        "review_required": true,
+        "evaluator": "stage09 deterministic rule engine"
+      },
+      {
+        "rule_id": "S09-T010",
+        "rule_version": "1.0",
+        "rule_group": "TRANSACTION",
+        "rule_name": "完整快照比例合计",
+        "description": "完整快照持股比例合计约为100%。",
+        "input_objects": [],
+        "condition": "implemented_in_python",
+        "expected_result": "PASS",
+        "severity": "HIGH",
+        "blocking": true,
+        "review_required": true,
+        "evaluator": "stage09 deterministic rule engine"
+      },
+      {
+        "rule_id": "S09-P001",
+        "rule_version": "1.0",
+        "rule_group": "PEVC_PATH",
+        "rule_name": "PEVC状态及复核受控",
+        "description": "主体状态必须来自阶段八允许值且记录已人工确认。",
+        "input_objects": [],
+        "condition": "implemented_in_python",
+        "expected_result": "PASS",
+        "severity": "HIGH",
+        "blocking": true,
+        "review_required": true,
+        "evaluator": "stage09 deterministic rule engine"
+      },
+      {
+        "rule_id": "S09-P002",
+        "rule_version": "1.0",
+        "rule_group": "PEVC_PATH",
+        "rule_name": "投资维度独立",
+        "description": "DIRECT/INDIRECT与CAPITAL_INCREASE/SHARE_TRANSFER分别保存。",
+        "input_objects": [],
+        "condition": "implemented_in_python",
+        "expected_result": "PASS",
+        "severity": "HIGH",
+        "blocking": true,
+        "review_required": true,
+        "evaluator": "stage09 deterministic rule engine"
+      },
+      {
+        "rule_id": "S09-P003",
+        "rule_version": "1.0",
+        "rule_group": "PEVC_PATH",
+        "rule_name": "投资事件与路径边匹配",
+        "description": "增资投资对应认购边，受让或退出对应转让边。",
+        "input_objects": [],
+        "condition": "implemented_in_python",
+        "expected_result": "PASS",
+        "severity": "HIGH",
+        "blocking": true,
+        "review_required": true,
+        "evaluator": "stage09 deterministic rule engine"
+      },
+      {
+        "rule_id": "S09-P004",
+        "rule_version": "1.0",
+        "rule_group": "PEVC_PATH",
+        "rule_name": "直接投资路径存在",
+        "description": "直接投资必须有权益或交易路径边。",
+        "input_objects": [],
+        "condition": "implemented_in_python",
+        "expected_result": "PASS",
+        "severity": "HIGH",
+        "blocking": true,
+        "review_required": true,
+        "evaluator": "stage09 deterministic rule engine"
+      },
+      {
+        "rule_id": "S09-P005",
+        "rule_version": "1.0",
+        "rule_group": "PEVC_PATH",
+        "rule_name": "GP关系不构成权益路径",
+        "description": "GP、管理人及执行事务合伙人边默认不形成发行人权益路径。",
+        "input_objects": [],
+        "condition": "implemented_in_python",
+        "expected_result": "PASS",
+        "severity": "HIGH",
+        "blocking": true,
+        "review_required": true,
+        "evaluator": "stage09 deterministic rule engine"
+      },
+      {
+        "rule_id": "S09-P006",
+        "rule_version": "1.0",
+        "rule_group": "PEVC_PATH",
+        "rule_name": "间接经济路径明示",
+        "description": "仅原文明示基金资金来源时形成间接经济路径。",
+        "input_objects": [],
+        "condition": "implemented_in_python",
+        "expected_result": "PASS",
+        "severity": "HIGH",
+        "blocking": true,
+        "review_required": true,
+        "evaluator": "stage09 deterministic rule engine"
+      },
+      {
+        "rule_id": "S09-P007",
+        "rule_version": "1.0",
+        "rule_group": "PEVC_PATH",
+        "rule_name": "未披露投资值保持空值",
+        "description": "NOT_DISCLOSED记录不得填零、均分或倒推。",
+        "input_objects": [],
+        "condition": "implemented_in_python",
+        "expected_result": "PASS",
+        "severity": "HIGH",
+        "blocking": true,
+        "review_required": true,
+        "evaluator": "stage09 deterministic rule engine"
+      },
+      {
+        "rule_id": "S09-P008",
+        "rule_version": "1.0",
+        "rule_group": "PEVC_PATH",
+        "rule_name": "最终分类一致",
+        "description": "最终识别状态和规范名称须与阶段八主体主表一致。",
+        "input_objects": [],
+        "condition": "implemented_in_python",
+        "expected_result": "PASS",
+        "severity": "HIGH",
+        "blocking": true,
+        "review_required": true,
+        "evaluator": "stage09 deterministic rule engine"
+      },
+      {
+        "rule_id": "S09-P009",
+        "rule_version": "1.0",
+        "rule_group": "PEVC_PATH",
+        "rule_name": "CONFIRMED证据门槛",
+        "description": "CONFIRMED主体须有原文证据、高置信度和人工确认。",
+        "input_objects": [],
+        "condition": "implemented_in_python",
+        "expected_result": "PASS",
+        "severity": "HIGH",
+        "blocking": true,
+        "review_required": true,
+        "evaluator": "stage09 deterministic rule engine"
+      },
+      {
+        "rule_id": "S09-P010",
+        "rule_version": "1.0",
+        "rule_group": "PEVC_PATH",
+        "rule_name": "路径边序号连续",
+        "description": "同一路径边序号必须唯一、从1连续。",
+        "input_objects": [],
+        "condition": "implemented_in_python",
+        "expected_result": "PASS",
+        "severity": "HIGH",
+        "blocking": true,
+        "review_required": true,
+        "evaluator": "stage09 deterministic rule engine"
+      },
+      {
+        "rule_id": "S09-P011",
+        "rule_version": "1.0",
+        "rule_group": "PEVC_PATH",
+        "rule_name": "投资事件汇总完整",
+        "description": "主体最终汇总的投资事件须与投资记录一致。",
+        "input_objects": [],
+        "condition": "implemented_in_python",
+        "expected_result": "PASS",
+        "severity": "HIGH",
+        "blocking": true,
+        "review_required": true,
+        "evaluator": "stage09 deterministic rule engine"
+      },
+      {
+        "rule_id": "S09-G001",
+        "rule_version": "1.0",
+        "rule_group": "TRACEABILITY",
+        "rule_name": "自动结果证据链完整",
+        "description": "所有自动化结果保留事件ID、证据ID、双页码和原文。",
+        "input_objects": [],
+        "condition": "implemented_in_python",
+        "expected_result": "PASS",
+        "severity": "CRITICAL",
+        "blocking": true,
+        "review_required": true,
+        "evaluator": "stage09 deterministic rule engine"
+      },
+      {
+        "rule_id": "S09-G002",
+        "rule_version": "1.0",
+        "rule_group": "TRACEABILITY",
+        "rule_name": "禁止创建新主体",
+        "description": "9C不得创建9B不存在的主体ID。",
+        "input_objects": [],
+        "condition": "implemented_in_python",
+        "expected_result": "PASS",
+        "severity": "CRITICAL",
+        "blocking": true,
+        "review_required": true,
+        "evaluator": "stage09 deterministic rule engine"
+      },
+      {
+        "rule_id": "S09-G003",
+        "rule_version": "1.0",
+        "rule_group": "BASELINE",
+        "rule_name": "正式9B基线",
+        "description": "9C只能在FINAL_APPROVED的9B模型上运行。",
+        "input_objects": [],
+        "condition": "implemented_in_python",
+        "expected_result": "PASS",
+        "severity": "CRITICAL",
+        "blocking": true,
+        "review_required": true,
+        "evaluator": "stage09 deterministic rule engine"
+      }
+    ]
+  },
+  "stage9d": {
+    "metadata": {
+      "stage": 9,
+      "substage": "9D",
+      "rule_set_version": "9D.1.0",
+      "rule_count": 8
+    },
+    "rules": [
+      {
+        "rule_id": "S09-R001",
+        "name": "人工决定受控选项",
+        "blocking": true
+      },
+      {
+        "rule_id": "S09-R002",
+        "name": "人工修正必须填写修正值和说明",
+        "blocking": true
+      },
+      {
+        "rule_id": "S09-R003",
+        "name": "保留未知必须填写说明",
+        "blocking": true
+      },
+      {
+        "rule_id": "S09-R004",
+        "name": "退回重新检查必须填写说明",
+        "blocking": true
+      },
+      {
+        "rule_id": "S09-R005",
+        "name": "关闭事项必须填写复核人和日期",
+        "blocking": true
+      },
+      {
+        "rule_id": "S09-R006",
+        "name": "原自动结果不得覆盖",
+        "blocking": true
+      },
+      {
+        "rule_id": "S09-R007",
+        "name": "人工决定必须保留证据链和规则ID",
+        "blocking": true
+      },
+      {
+        "rule_id": "S09-R008",
+        "name": "全部事项有效关闭后方可进入9E",
+        "blocking": true
+      }
+    ]
+  },
+  "stage9e_release_rules": [
+    {
+      "rule_id": "S09-A001",
+      "name": "最终Bundle顶层字段完整",
+      "blocking": true
+    },
+    {
+      "rule_id": "S09-A002",
+      "name": "最终状态为FINAL_APPROVED",
+      "blocking": true
+    },
+    {
+      "rule_id": "S09-A003",
+      "name": "所有验收检查通过",
+      "blocking": true
+    },
+    {
+      "rule_id": "S09-A004",
+      "name": "无开放异常",
+      "blocking": true
+    },
+    {
+      "rule_id": "S09-A005",
+      "name": "17条人工复核决定全部有效关闭",
+      "blocking": true
+    }
+  ]
+}
