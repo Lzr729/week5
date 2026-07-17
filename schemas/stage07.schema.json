@@ -1,0 +1,129 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Stage07 Numeric Validation Bundle",
+  "type": "object",
+  "required": [
+    "metadata",
+    "source_values",
+    "validation_items",
+    "calculation_inputs",
+    "validation_results",
+    "manual_review_items",
+    "acceptance_checks",
+    "review_log"
+  ],
+  "properties": {
+    "metadata": {
+      "type": "object",
+      "required": [
+        "project",
+        "stage",
+        "stage_name",
+        "status",
+        "primary_fact_source",
+        "record_counts"
+      ],
+      "properties": {
+        "stage": {
+          "const": 7
+        },
+        "status": {
+          "const": "final_approved"
+        },
+        "primary_fact_source": {
+          "type": "string"
+        },
+        "record_counts": {
+          "type": "object"
+        }
+      }
+    },
+    "source_values": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": [
+          "source_value_id",
+          "event_id",
+          "pdf_pages",
+          "printed_pages",
+          "original_excerpt"
+        ]
+      }
+    },
+    "validation_items": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": [
+          "validation_id",
+          "event_id",
+          "validation_description",
+          "final_status",
+          "evidence_ids"
+        ]
+      }
+    },
+    "calculation_inputs": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": [
+          "input_id",
+          "validation_id",
+          "input_role",
+          "standardized_value",
+          "standardized_unit"
+        ]
+      }
+    },
+    "validation_results": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": [
+          "validation_id",
+          "formula_expression",
+          "decimal_exact_result",
+          "difference_classification",
+          "final_conclusion"
+        ]
+      }
+    },
+    "manual_review_items": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": [
+          "review_item_id",
+          "validation_id",
+          "user_decision",
+          "user_review_note"
+        ]
+      }
+    },
+    "acceptance_checks": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": [
+          "check_id",
+          "check_item",
+          "status"
+        ]
+      }
+    },
+    "review_log": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": [
+          "log_id",
+          "date",
+          "action",
+          "note"
+        ]
+      }
+    }
+  }
+}
