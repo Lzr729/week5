@@ -1,0 +1,142 @@
+{
+  "events": [
+    {
+      "auto_event_id": "AUTO-CE-002",
+      "event_date_normalized": "2009-12",
+      "event_date_original": "2009年12月",
+      "event_name": "有限公司第一次股权转让及增资",
+      "event_types": [
+        "equity_transfer",
+        "capital_increase"
+      ],
+      "evidence_excerpt": "2009年12月，有限公司第一次股权转让及增资，注册资本增至100万元；深圳市云汉电子有限公司将其持有的有限公司50%股权转让给曾烨，曾烨、刘云锋按原持股比例增资50万元。",
+      "extraction_method": "MULTIMODAL_VISION",
+      "pdf_pages": [
+        56
+      ],
+      "printed_pages": [
+        55
+      ],
+      "review_status": "AUTO_EXTRACTED"
+    },
+    {
+      "auto_event_id": "AUTO-CE-003",
+      "event_date_normalized": "2014-06",
+      "event_date_original": "2014年6月",
+      "event_name": "有限公司第二次股权转让",
+      "event_types": [
+        "equity_transfer"
+      ],
+      "evidence_excerpt": "2014年6月，有限公司第二次股权转让，注册资本100万元；刘云锋将其持有的15.75%、6.85%的股权分别转让给曾烨、为赛咨询。",
+      "extraction_method": "MULTIMODAL_VISION",
+      "pdf_pages": [
+        56
+      ],
+      "printed_pages": [
+        55
+      ],
+      "review_status": "AUTO_EXTRACTED"
+    },
+    {
+      "auto_event_id": "AUTO-CE-004",
+      "event_date_normalized": "2014-08",
+      "event_date_original": "2014年8月",
+      "event_name": "有限公司第二次增资",
+      "event_types": [
+        "capital_increase"
+      ],
+      "evidence_excerpt": "2014年8月，有限公司第二次增资，注册资本增至128.205万元；力源信息、东方富海及芜湖富海共同增资28.205万元。",
+      "extraction_method": "MULTIMODAL_VISION",
+      "pdf_pages": [
+        56
+      ],
+      "printed_pages": [
+        55
+      ],
+      "review_status": "AUTO_EXTRACTED"
+    },
+    {
+      "auto_event_id": "AUTO-CE-005",
+      "event_date_normalized": "2015-01",
+      "event_date_original": "2015年1月",
+      "event_name": "有限公司第三次增资",
+      "event_types": [
+        "capital_increase"
+      ],
+      "evidence_excerpt": "2015年1月，有限公司第三次增资，注册资本增至136.9864万元；力源信息、东方富海及芜湖富海共同增资8.78714万元。",
+      "extraction_method": "MULTIMODAL_VISION",
+      "pdf_pages": [
+        56
+      ],
+      "printed_pages": [
+        55
+      ],
+      "review_status": "AUTO_EXTRACTED"
+    },
+    {
+      "auto_event_id": "AUTO-CE-006",
+      "event_date_normalized": "2015-03",
+      "event_date_original": "2015年3月",
+      "event_name": "有限公司第四次增资",
+      "event_types": [
+        "capital_increase"
+      ],
+      "evidence_excerpt": "2015年3月，有限公司第四次增资，注册资本增至2,000万元；新增注册资本由各股东按照其持股比例以资本公积转增。",
+      "extraction_method": "MULTIMODAL_VISION",
+      "pdf_pages": [
+        56
+      ],
+      "printed_pages": [
+        55
+      ],
+      "review_status": "AUTO_EXTRACTED"
+    },
+    {
+      "auto_event_id": "AUTO-CE-007",
+      "event_date_normalized": "2015-08",
+      "event_date_original": "2015年8月",
+      "event_name": "有限公司第五次增资",
+      "event_types": [
+        "capital_increase"
+      ],
+      "evidence_excerpt": "2015年8月，有限公司第五次增资，注册资本增至2,158.2733万元；深创投、丰利财富、镇江红土、昆山红土、富海深湾、芜湖富海共同增资158.2733万元。",
+      "extraction_method": "MULTIMODAL_VISION",
+      "pdf_pages": [
+        57
+      ],
+      "printed_pages": [
+        56
+      ],
+      "review_status": "AUTO_EXTRACTED"
+    }
+  ],
+  "input_images": [
+    {
+      "file": "pdf_page_056.png",
+      "pdf_page": 56,
+      "printed_page": 55,
+      "sha256": "62e56779f69e1d58fd660320655b763cdb9f6576993c91c9376b55b8f17fbed2"
+    },
+    {
+      "file": "pdf_page_057.png",
+      "pdf_page": 57,
+      "printed_page": 56,
+      "sha256": "8464c02369c91446bcb8d92a1880be8213942daf06e849fc3a5a8afeefbc9f98"
+    },
+    {
+      "file": "pdf_page_058.png",
+      "pdf_page": 58,
+      "printed_page": 57,
+      "sha256": "4c6fc25afb1c6aa8750b918203a77a45cc89e470fb03f25bab1c2547b08b0135"
+    }
+  ],
+  "model": "GPT-5.6 Thinking (multimodal)",
+  "quality_controls": [
+    "each node contains a date and action",
+    "capital totals preserve printed values",
+    "collective contributions are not allocated unless the image states a deterministic ratio",
+    "visual text is stored verbatim without external enrichment"
+  ],
+  "runtime": "ChatGPT multimodal vision",
+  "temperature": "not exposed by runtime"
+}
