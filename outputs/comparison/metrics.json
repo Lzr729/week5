@@ -1,0 +1,41 @@
+{
+  "events": {
+    "auto_count": 14,
+    "gold_count": 14,
+    "matched": 14,
+    "precision": 1.0,
+    "recall": 1.0,
+    "vision_event_count": 6
+  },
+  "extraction_mode": "PDF_TEXT_RULES + MULTIMODAL_VISION + DETERMINISTIC_CALCULATION + PEVC_RULE_ENGINE",
+  "numeric_checks": {
+    "auto_count": 55,
+    "ce005_difference_preserved": true,
+    "pass_or_expected_count": 55
+  },
+  "pevc": {
+    "entity_count": 45,
+    "investment_record_count": 33,
+    "matched_status_count": 45,
+    "path_edge_count": 65
+  },
+  "review_queue": {
+    "open_items": 0,
+    "resolution": "image cluster processed by multimodal model"
+  },
+  "snapshots": {
+    "auto_count": 15,
+    "gold_count": 15,
+    "gold_holding_rows": 201,
+    "holding_exact_rate": 1.0,
+    "holding_rows": 201,
+    "matched_holding_rows": 201
+  },
+  "transaction_legs": {
+    "auto_count": 48,
+    "gold_count": 48,
+    "matched": 48,
+    "precision": 1.0,
+    "recall": 1.0
+  }
+}

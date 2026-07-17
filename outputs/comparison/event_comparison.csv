@@ -1,0 +1,15 @@
+﻿auto_event_id,gold_event_id,event_name,comparison_status,extraction_method
+AUTO-CE-001,CE-001,上海云汉电子有限公司设立,MATCH,narrative_rule
+AUTO-CE-002,CE-002,有限公司第一次股权转让及增资,MATCH,MULTIMODAL_VISION
+AUTO-CE-003,CE-003,有限公司第二次股权转让,MATCH,MULTIMODAL_VISION
+AUTO-CE-004,CE-004,有限公司第二次增资,MATCH,MULTIMODAL_VISION
+AUTO-CE-005,CE-005,有限公司第三次增资,MATCH,MULTIMODAL_VISION
+AUTO-CE-006,CE-006,有限公司第四次增资,MATCH,MULTIMODAL_VISION
+AUTO-CE-007,CE-007,有限公司第五次增资,MATCH,MULTIMODAL_VISION
+AUTO-CE-008,CE-008,有限公司整体变更设立股份公司,MATCH,narrative_rule
+AUTO-CE-009,CE-009,2018 年4 月，股份公司第一次股权转让,MATCH,heading_and_section_rule
+AUTO-CE-010,CE-010,2018 年6 月至7 月，股份公司增加注册资本暨第二次股权转让,MATCH,heading_and_section_rule
+AUTO-CE-011,CE-011,2019 年8 月，股份公司第三次股权转让,MATCH,heading_and_section_rule
+AUTO-CE-012,CE-012,2020 年5 月，股份公司第二次增资,MATCH,heading_and_section_rule
+AUTO-CE-013,CE-013,2020 年9 月，股份公司第三次增资和第四次股权转让,MATCH,heading_and_section_rule
+AUTO-CE-014,CE-014,对赌协议解除相关情况,MATCH,heading_and_section_rule
